@@ -25,7 +25,7 @@ extension Endpoint {
     }
     
     var request: URLRequest {
-        let url = urlComponents.url! //want to crash if no information is complete
+        let url = urlComponents.url!
         return URLRequest(url: url)
     }
 }
