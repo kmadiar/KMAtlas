@@ -7,6 +7,13 @@
 //
 
 final class ATModuleFactoryImp: ATModuleFactory {
+    func makeSearchOutput(dataService: ATDataService) -> SearchListView {
+        let vc = SearchListController.atlas_controllerFromStoryboard(.search)
+        vc.dataService = dataService
+        
+        return vc
+    }
+    
     func makeCountryDetails(details: CountryDetails) -> CountryDetailView {
         let vc = CountryDetailController.atlas_controllerFromStoryboard(.country)
         vc.details = details

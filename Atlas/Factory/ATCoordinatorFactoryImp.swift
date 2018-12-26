@@ -30,8 +30,7 @@ final class ATCoordinatorFactoryImp: ATCoordinatorFactory {
     }
     
     func makeSearchCoordinator(navController: UINavigationController?) -> ATCoordinator {
-        let controller = MainTabBarController.atlas_controllerFromStoryboard(.main)
-        let coordinator = ATTabbarCoordinator(tabbarView: controller, coordinatorFactory: ATCoordinatorFactoryImp(dataService: dataService))
+        let coordinator = SearchCoordinator(router: router(navController), factory: ATModuleFactoryImp(), dataService: dataService)
         return coordinator
     }
     

@@ -11,4 +11,5 @@ enum Storyboards: String {
     case regions = "Regions"
     case countries = "Countries"
     case country = "Country"
+    case search = "Search"
 }

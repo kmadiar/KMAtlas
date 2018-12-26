@@ -60,6 +60,10 @@
 		7024ECFB21D420250000D7E3 /* ContryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7024ECFA21D420250000D7E3 /* ContryDetailView.swift */; };
 		7024ECFD21D422A20000D7E3 /* CountryDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7024ECFC21D422A20000D7E3 /* CountryDetailController.swift */; };
 		7024ECFF21D4280E0000D7E3 /* CountryDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7024ECFE21D4280E0000D7E3 /* CountryDetails.swift */; };
+		7024ED0121D43EFE0000D7E3 /* SearchListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7024ED0021D43EFE0000D7E3 /* SearchListView.swift */; };
+		7024ED0521D440A30000D7E3 /* SearchListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7024ED0421D440A30000D7E3 /* SearchListController.swift */; };
+		7024ED0721D4418B0000D7E3 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7024ED0621D4418B0000D7E3 /* Search.storyboard */; };
+		7024ED0921D442FD0000D7E3 /* SearchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7024ED0821D442FD0000D7E3 /* SearchCoordinator.swift */; };
 		7074DABC21D26AE000A8D408 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7074DABB21D26AE000A8D408 /* AppDelegate.swift */; };
 		7074DABE21D26AE000A8D408 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7074DABD21D26AE000A8D408 /* ViewController.swift */; };
 		7074DAC121D26AE000A8D408 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7074DABF21D26AE000A8D408 /* Main.storyboard */; };
@@ -124,6 +128,11 @@
 		7024ECFA21D420250000D7E3 /* ContryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContryDetailView.swift; sourceTree = "<group>"; };
 		7024ECFC21D422A20000D7E3 /* CountryDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailController.swift; sourceTree = "<group>"; };
 		7024ECFE21D4280E0000D7E3 /* CountryDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetails.swift; sourceTree = "<group>"; };
+		7024ED0021D43EFE0000D7E3 /* SearchListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchListView.swift; sourceTree = "<group>"; };
+		7024ED0221D43F700000D7E3 /* SearchListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchListItem.swift; sourceTree = "<group>"; };
+		7024ED0421D440A30000D7E3 /* SearchListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchListController.swift; sourceTree = "<group>"; };
+		7024ED0621D4418B0000D7E3 /* Search.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		7024ED0821D442FD0000D7E3 /* SearchCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCoordinator.swift; sourceTree = "<group>"; };
 		7074DAB821D26AE000A8D408 /* Atlas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Atlas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7074DABB21D26AE000A8D408 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7074DABD21D26AE000A8D408 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -222,6 +231,7 @@
 		7010B11821D357B4006D7F87 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				7024ED0821D442FD0000D7E3 /* SearchCoordinator.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -285,6 +295,9 @@
 		7010B13421D3759B006D7F87 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				7024ED0021D43EFE0000D7E3 /* SearchListView.swift */,
+				7024ED0221D43F700000D7E3 /* SearchListItem.swift */,
+				7024ED0421D440A30000D7E3 /* SearchListController.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -311,6 +324,7 @@
 		7010B16421D387FF006D7F87 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				7024ED0621D4418B0000D7E3 /* Search.storyboard */,
 				7024ECF021D3A8AD0000D7E3 /* Countries.storyboard */,
 				7074DAC721D26AE000A8D408 /* LaunchScreen.storyboard */,
 				7074DABF21D26AE000A8D408 /* Main.storyboard */,
@@ -538,6 +552,7 @@
 				7024ECF121D3A8AE0000D7E3 /* Countries.storyboard in Resources */,
 				7024ECF921D41F9F0000D7E3 /* Country.storyboard in Resources */,
 				7074DAC121D26AE000A8D408 /* Main.storyboard in Resources */,
+				7024ED0721D4418B0000D7E3 /* Search.storyboard in Resources */,
 				7024ECF521D3BC560000D7E3 /* Flags.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -606,6 +621,8 @@
 				7010B0F721D28B7A006D7F87 /* ATCountry.swift in Sources */,
 				7010B15421D37DC3006D7F87 /* ATPresentable.swift in Sources */,
 				7010B11521D2E727006D7F87 /* ATNetworkDataManager.swift in Sources */,
+				7024ED0121D43EFE0000D7E3 /* SearchListView.swift in Sources */,
+				7024ED0521D440A30000D7E3 /* SearchListController.swift in Sources */,
 				7010B17121D38F14006D7F87 /* ATTabbarView.swift in Sources */,
 				7010B17D21D39CCF006D7F87 /* AtlasCoordinator.swift in Sources */,
 				7024ECE921D3A34B0000D7E3 /* CountryListItem.swift in Sources */,
@@ -646,6 +663,7 @@
 				7010B15F21D38165006D7F87 /* ATModuleFactoryImp.swift in Sources */,
 				7010B14A21D376DB006D7F87 /* MainTabBarViewController.swift in Sources */,
 				7010B10C21D2DF10006D7F87 /* ATActivityView.swift in Sources */,
+				7024ED0921D442FD0000D7E3 /* SearchCoordinator.swift in Sources */,
 				7010B0EC21D28668006D7F87 /* ATAPIError.swift in Sources */,
 				7010B15721D37E15006D7F87 /* ATBaseView.swift in Sources */,
 				7010B17521D39186006D7F87 /* ATBaseCoordinator.swift in Sources */,
