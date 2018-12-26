@@ -9,4 +9,5 @@
 enum Storyboards: String {
     case main = "Main"
     case regions = "Regions"
+    case countries = "Countries"
 }

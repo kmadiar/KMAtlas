@@ -12,11 +12,14 @@ struct ATCountry: Decodable {
     var name: String // Country name
     var region: ATRegion // Country Region
     var regionalBlocs: [ATRegionGroup] // Contry region blocks
-    var nativeName: String? // Name on native language
+    var nativeName: String // Name on native language
     var currencies: [ATCurrency]
     var languages: [ATLanguage]
     var latlng: [Double]
     var alpha3Code: String
+    var alpha2Code: String
+    
+    var flag: String
 //
     var borders: [String]
 }

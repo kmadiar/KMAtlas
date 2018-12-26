@@ -30,14 +30,25 @@ final class AtlasCoordinator: ATBaseCoordinator {
         
         let itemsOutput = factory.makeRegions(dataService: dataService)
         itemsOutput.onItemSelect = { [weak self] (item) in
-            self?.showItemDetail(item)
+            let params: CountryListParam
+            if item.group {
+                params = CountryListParam(name: item.name, regionId: nil, regionGroupId: item.code)
+            } else {
+                params = CountryListParam(name: item.name, regionId: item.code, regionGroupId: nil)
+            }
+            
+            self?.showCountryList(params)
         }
         router.setRootModule(itemsOutput)
     }
-    
-    private func showItemDetail(_ item: RegionsListItem) {
-        
-//        let itemDetailFlowOutput = factory.makeItemDetailOutput(item: item)
-//        router.push(itemDetailFlowOutput)
+
+    func showCountryList(_ params: CountryListParam) {
+        let countryListOutput = factory.makeCoutryList(dataService: dataService, param: params)
+        router.push(countryListOutput)
     }
+    
+//    private func showItemDetail(_ item: RegionsListItem) {
+//        let itemDetailFlowOutput = factory.makeCoutryList(dataService: dataService, param: item)
+//        router.push(itemDetailFlowOutput)
+//    }
 }

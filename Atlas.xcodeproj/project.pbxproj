@@ -25,14 +25,6 @@
 		7010B11321D2E5A7006D7F87 /* ATDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B11221D2E5A7006D7F87 /* ATDataService.swift */; };
 		7010B11521D2E727006D7F87 /* ATNetworkDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B11421D2E727006D7F87 /* ATNetworkDataManager.swift */; };
 		7010B11721D2ED88006D7F87 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B11621D2ED88006D7F87 /* ArrayExtension.swift */; };
-		7010B12221D35838006D7F87 /* FavoritesModelOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B11A21D35837006D7F87 /* FavoritesModelOutput.swift */; };
-		7010B12321D35838006D7F87 /* FavoritesViewControllerInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B11B21D35837006D7F87 /* FavoritesViewControllerInput.swift */; };
-		7010B12421D35838006D7F87 /* FavoritesModuleInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B11C21D35837006D7F87 /* FavoritesModuleInitializer.swift */; };
-		7010B12521D35838006D7F87 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B11D21D35837006D7F87 /* FavoritesViewController.swift */; };
-		7010B12621D35838006D7F87 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B11E21D35838006D7F87 /* FavoritesView.swift */; };
-		7010B12721D35838006D7F87 /* FavoritesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B11F21D35838006D7F87 /* FavoritesModel.swift */; };
-		7010B12821D35838006D7F87 /* FavoritesModelInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B12021D35838006D7F87 /* FavoritesModelInput.swift */; };
-		7010B12921D35838006D7F87 /* FavoritesModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B12121D35838006D7F87 /* FavoritesModuleConfigurator.swift */; };
 		7010B14A21D376DB006D7F87 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B14921D376DB006D7F87 /* MainTabBarViewController.swift */; };
 		7010B14D21D378B7006D7F87 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B14C21D378B7006D7F87 /* ApplicationCoordinator.swift */; };
 		7010B14F21D378D2006D7F87 /* ATCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B14E21D378D2006D7F87 /* ATCoordinator.swift */; };
@@ -42,7 +34,7 @@
 		7010B15921D37F5E006D7F87 /* RegionsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B15821D37F5E006D7F87 /* RegionsListView.swift */; };
 		7010B15B21D3801D006D7F87 /* RegionsListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B15A21D3801D006D7F87 /* RegionsListItem.swift */; };
 		7010B15F21D38165006D7F87 /* ATModuleFactoryImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B15E21D38165006D7F87 /* ATModuleFactoryImp.swift */; };
-		7010B16121D38287006D7F87 /* RegionsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B16021D38287006D7F87 /* RegionsListViewController.swift */; };
+		7010B16121D38287006D7F87 /* RegionsListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B16021D38287006D7F87 /* RegionsListController.swift */; };
 		7010B16321D3879A006D7F87 /* UIVIewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B16221D3879A006D7F87 /* UIVIewControllerExtension.swift */; };
 		7010B16621D3880A006D7F87 /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B16521D3880A006D7F87 /* Storyboards.swift */; };
 		7010B16821D38846006D7F87 /* NSObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B16721D38846006D7F87 /* NSObjectExtension.swift */; };
@@ -55,6 +47,15 @@
 		7010B17821D392B9006D7F87 /* ATRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B17721D392B9006D7F87 /* ATRouter.swift */; };
 		7010B17A21D392E1006D7F87 /* ATRouterImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B17921D392E1006D7F87 /* ATRouterImp.swift */; };
 		7010B17D21D39CCF006D7F87 /* AtlasCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B17C21D39CCF006D7F87 /* AtlasCoordinator.swift */; };
+		7024ECE721D3A3170000D7E3 /* CountryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7024ECE621D3A3170000D7E3 /* CountryListView.swift */; };
+		7024ECE921D3A34B0000D7E3 /* CountryListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7024ECE821D3A34B0000D7E3 /* CountryListItem.swift */; };
+		7024ECEB21D3A41F0000D7E3 /* CountryListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7024ECEA21D3A41F0000D7E3 /* CountryListController.swift */; };
+		7024ECED21D3A4F10000D7E3 /* ATFlagHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7024ECEC21D3A4F10000D7E3 /* ATFlagHelper.swift */; };
+		7024ECEF21D3A7570000D7E3 /* CountryListParam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7024ECEE21D3A7570000D7E3 /* CountryListParam.swift */; };
+		7024ECF121D3A8AE0000D7E3 /* Countries.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7024ECF021D3A8AD0000D7E3 /* Countries.storyboard */; };
+		7024ECF321D3AA1D0000D7E3 /* CountryListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7024ECF221D3AA1D0000D7E3 /* CountryListTableViewCell.swift */; };
+		7024ECF521D3BC560000D7E3 /* Flags.json in Resources */ = {isa = PBXBuildFile; fileRef = 7024ECF421D3BC560000D7E3 /* Flags.json */; };
+		7024ECF721D3BD4B0000D7E3 /* ATFlag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7024ECF621D3BD4B0000D7E3 /* ATFlag.swift */; };
 		7074DABC21D26AE000A8D408 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7074DABB21D26AE000A8D408 /* AppDelegate.swift */; };
 		7074DABE21D26AE000A8D408 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7074DABD21D26AE000A8D408 /* ViewController.swift */; };
 		7074DAC121D26AE000A8D408 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7074DABF21D26AE000A8D408 /* Main.storyboard */; };
@@ -84,22 +85,6 @@
 		7010B11221D2E5A7006D7F87 /* ATDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATDataService.swift; sourceTree = "<group>"; };
 		7010B11421D2E727006D7F87 /* ATNetworkDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATNetworkDataManager.swift; sourceTree = "<group>"; };
 		7010B11621D2ED88006D7F87 /* ArrayExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
-		7010B11A21D35837006D7F87 /* FavoritesModelOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesModelOutput.swift; sourceTree = "<group>"; };
-		7010B11B21D35837006D7F87 /* FavoritesViewControllerInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewControllerInput.swift; sourceTree = "<group>"; };
-		7010B11C21D35837006D7F87 /* FavoritesModuleInitializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesModuleInitializer.swift; sourceTree = "<group>"; };
-		7010B11D21D35837006D7F87 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
-		7010B11E21D35838006D7F87 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
-		7010B11F21D35838006D7F87 /* FavoritesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesModel.swift; sourceTree = "<group>"; };
-		7010B12021D35838006D7F87 /* FavoritesModelInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesModelInput.swift; sourceTree = "<group>"; };
-		7010B12121D35838006D7F87 /* FavoritesModuleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesModuleConfigurator.swift; sourceTree = "<group>"; };
-		7010B13521D37655006D7F87 /* RegionsModelOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionsModelOutput.swift; sourceTree = "<group>"; };
-		7010B13621D37655006D7F87 /* RegionsViewControllerInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionsViewControllerInput.swift; sourceTree = "<group>"; };
-		7010B13721D37655006D7F87 /* RegionsModuleInitializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionsModuleInitializer.swift; sourceTree = "<group>"; };
-		7010B13821D37655006D7F87 /* RegionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionsViewController.swift; sourceTree = "<group>"; };
-		7010B13921D37655006D7F87 /* RegionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionsView.swift; sourceTree = "<group>"; };
-		7010B13A21D37655006D7F87 /* RegionsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionsModel.swift; sourceTree = "<group>"; };
-		7010B13B21D37655006D7F87 /* RegionsModelInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionsModelInput.swift; sourceTree = "<group>"; };
-		7010B13C21D37655006D7F87 /* RegionsModuleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionsModuleConfigurator.swift; sourceTree = "<group>"; };
 		7010B14921D376DB006D7F87 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		7010B14C21D378B7006D7F87 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 		7010B14E21D378D2006D7F87 /* ATCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATCoordinator.swift; sourceTree = "<group>"; };
@@ -109,7 +94,7 @@
 		7010B15821D37F5E006D7F87 /* RegionsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionsListView.swift; sourceTree = "<group>"; };
 		7010B15A21D3801D006D7F87 /* RegionsListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionsListItem.swift; sourceTree = "<group>"; };
 		7010B15E21D38165006D7F87 /* ATModuleFactoryImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATModuleFactoryImp.swift; sourceTree = "<group>"; };
-		7010B16021D38287006D7F87 /* RegionsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionsListViewController.swift; sourceTree = "<group>"; };
+		7010B16021D38287006D7F87 /* RegionsListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionsListController.swift; sourceTree = "<group>"; };
 		7010B16221D3879A006D7F87 /* UIVIewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIVIewControllerExtension.swift; sourceTree = "<group>"; };
 		7010B16521D3880A006D7F87 /* Storyboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
 		7010B16721D38846006D7F87 /* NSObjectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectExtension.swift; sourceTree = "<group>"; };
@@ -122,6 +107,15 @@
 		7010B17721D392B9006D7F87 /* ATRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATRouter.swift; sourceTree = "<group>"; };
 		7010B17921D392E1006D7F87 /* ATRouterImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATRouterImp.swift; sourceTree = "<group>"; };
 		7010B17C21D39CCF006D7F87 /* AtlasCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtlasCoordinator.swift; sourceTree = "<group>"; };
+		7024ECE621D3A3170000D7E3 /* CountryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CountryListView.swift; path = Atlas/Modules/ContryList/CountryListView.swift; sourceTree = SOURCE_ROOT; };
+		7024ECE821D3A34B0000D7E3 /* CountryListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListItem.swift; sourceTree = "<group>"; };
+		7024ECEA21D3A41F0000D7E3 /* CountryListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListController.swift; sourceTree = "<group>"; };
+		7024ECEC21D3A4F10000D7E3 /* ATFlagHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATFlagHelper.swift; sourceTree = "<group>"; };
+		7024ECEE21D3A7570000D7E3 /* CountryListParam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListParam.swift; sourceTree = "<group>"; };
+		7024ECF021D3A8AD0000D7E3 /* Countries.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Countries.storyboard; sourceTree = "<group>"; };
+		7024ECF221D3AA1D0000D7E3 /* CountryListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListTableViewCell.swift; sourceTree = "<group>"; };
+		7024ECF421D3BC560000D7E3 /* Flags.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Flags.json; sourceTree = "<group>"; };
+		7024ECF621D3BD4B0000D7E3 /* ATFlag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATFlag.swift; sourceTree = "<group>"; };
 		7074DAB821D26AE000A8D408 /* Atlas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Atlas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7074DABB21D26AE000A8D408 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7074DABD21D26AE000A8D408 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -175,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				7010B0F321D28859006D7F87 /* ATCountriesAPIWrapper.swift */,
+				7024ECEC21D3A4F10000D7E3 /* ATFlagHelper.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -240,49 +235,13 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
-		7010B12B21D3744B006D7F87 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				7010B12021D35838006D7F87 /* FavoritesModelInput.swift */,
-				7010B11F21D35838006D7F87 /* FavoritesModel.swift */,
-				7010B11A21D35837006D7F87 /* FavoritesModelOutput.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		7010B12C21D37451006D7F87 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				7010B11E21D35838006D7F87 /* FavoritesView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		7010B12D21D37456006D7F87 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				7010B11B21D35837006D7F87 /* FavoritesViewControllerInput.swift */,
-				7010B11D21D35837006D7F87 /* FavoritesViewController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		7010B12E21D3745E006D7F87 /* Configurator */ = {
-			isa = PBXGroup;
-			children = (
-				7010B11C21D35837006D7F87 /* FavoritesModuleInitializer.swift */,
-				7010B12121D35838006D7F87 /* FavoritesModuleConfigurator.swift */,
-			);
-			path = Configurator;
-			sourceTree = "<group>";
-		};
 		7010B12F21D3751A006D7F87 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				7024ECE521D3A2E30000D7E3 /* ContryList */,
 				7010B13421D3759B006D7F87 /* Search */,
 				7010B13321D3758C006D7F87 /* ContryDetails */,
-				7010B13221D37582006D7F87 /* Countries */,
-				7010B13121D37572006D7F87 /* Regions */,
+				7010B13121D37572006D7F87 /* RegionList */,
 				7010B13021D37524006D7F87 /* Favorite */,
 			);
 			path = Modules;
@@ -291,30 +250,18 @@
 		7010B13021D37524006D7F87 /* Favorite */ = {
 			isa = PBXGroup;
 			children = (
-				7010B12E21D3745E006D7F87 /* Configurator */,
-				7010B12D21D37456006D7F87 /* Controller */,
-				7010B12C21D37451006D7F87 /* View */,
-				7010B12B21D3744B006D7F87 /* Model */,
 			);
 			path = Favorite;
 			sourceTree = "<group>";
 		};
-		7010B13121D37572006D7F87 /* Regions */ = {
+		7010B13121D37572006D7F87 /* RegionList */ = {
 			isa = PBXGroup;
 			children = (
-				7010B15C21D380EC006D7F87 /* MVC */,
 				7010B15821D37F5E006D7F87 /* RegionsListView.swift */,
 				7010B15A21D3801D006D7F87 /* RegionsListItem.swift */,
-				7010B16021D38287006D7F87 /* RegionsListViewController.swift */,
+				7010B16021D38287006D7F87 /* RegionsListController.swift */,
 			);
-			path = Regions;
-			sourceTree = "<group>";
-		};
-		7010B13221D37582006D7F87 /* Countries */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Countries;
+			path = RegionList;
 			sourceTree = "<group>";
 		};
 		7010B13321D3758C006D7F87 /* ContryDetails */ = {
@@ -331,59 +278,12 @@
 			path = Search;
 			sourceTree = "<group>";
 		};
-		7010B14521D37662006D7F87 /* Configuration */ = {
-			isa = PBXGroup;
-			children = (
-				7010B13721D37655006D7F87 /* RegionsModuleInitializer.swift */,
-				7010B13C21D37655006D7F87 /* RegionsModuleConfigurator.swift */,
-			);
-			path = Configuration;
-			sourceTree = "<group>";
-		};
-		7010B14621D3767C006D7F87 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				7010B13521D37655006D7F87 /* RegionsModelOutput.swift */,
-				7010B13A21D37655006D7F87 /* RegionsModel.swift */,
-				7010B13B21D37655006D7F87 /* RegionsModelInput.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		7010B14721D3768E006D7F87 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				7010B13921D37655006D7F87 /* RegionsView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		7010B14821D3769B006D7F87 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				7010B13621D37655006D7F87 /* RegionsViewControllerInput.swift */,
-				7010B13821D37655006D7F87 /* RegionsViewController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
 		7010B14B21D378A6006D7F87 /* ApplicationCoordinator */ = {
 			isa = PBXGroup;
 			children = (
 				7010B14C21D378B7006D7F87 /* ApplicationCoordinator.swift */,
 			);
 			path = ApplicationCoordinator;
-			sourceTree = "<group>";
-		};
-		7010B15C21D380EC006D7F87 /* MVC */ = {
-			isa = PBXGroup;
-			children = (
-				7010B14821D3769B006D7F87 /* Controller */,
-				7010B14721D3768E006D7F87 /* View */,
-				7010B14621D3767C006D7F87 /* Model */,
-				7010B14521D37662006D7F87 /* Configuration */,
-			);
-			path = MVC;
 			sourceTree = "<group>";
 		};
 		7010B15D21D38140006D7F87 /* Factory */ = {
@@ -400,6 +300,7 @@
 		7010B16421D387FF006D7F87 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				7024ECF021D3A8AD0000D7E3 /* Countries.storyboard */,
 				7074DAC721D26AE000A8D408 /* LaunchScreen.storyboard */,
 				7074DABF21D26AE000A8D408 /* Main.storyboard */,
 				7010B16921D388E4006D7F87 /* Regions.storyboard */,
@@ -423,6 +324,18 @@
 				7010B17C21D39CCF006D7F87 /* AtlasCoordinator.swift */,
 			);
 			path = Atlas;
+			sourceTree = "<group>";
+		};
+		7024ECE521D3A2E30000D7E3 /* ContryList */ = {
+			isa = PBXGroup;
+			children = (
+				7024ECE621D3A3170000D7E3 /* CountryListView.swift */,
+				7024ECE821D3A34B0000D7E3 /* CountryListItem.swift */,
+				7024ECEA21D3A41F0000D7E3 /* CountryListController.swift */,
+				7024ECEE21D3A7570000D7E3 /* CountryListParam.swift */,
+				7024ECF221D3AA1D0000D7E3 /* CountryListTableViewCell.swift */,
+			);
+			path = ContryList;
 			sourceTree = "<group>";
 		};
 		7074DAAF21D26AE000A8D408 = {
@@ -475,6 +388,7 @@
 				7074DACA21D26AE000A8D408 /* Info.plist */,
 				7074DAC521D26AE000A8D408 /* Assets.xcassets */,
 				7010B10021D2AB54006D7F87 /* TextConstants.swift */,
+				7024ECF421D3BC560000D7E3 /* Flags.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -509,6 +423,7 @@
 				7010B0FA21D28DA4006D7F87 /* ATLanguage.swift */,
 				7010B0FE21D2AA55006D7F87 /* ATRegion.swift */,
 				7010B10221D2AC2C006D7F87 /* ATRegionGroup.swift */,
+				7024ECF621D3BD4B0000D7E3 /* ATFlag.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -608,7 +523,9 @@
 				7010B16A21D388E4006D7F87 /* Regions.storyboard in Resources */,
 				7074DAC921D26AE000A8D408 /* LaunchScreen.storyboard in Resources */,
 				7074DAC621D26AE000A8D408 /* Assets.xcassets in Resources */,
+				7024ECF121D3A8AE0000D7E3 /* Countries.storyboard in Resources */,
 				7074DAC121D26AE000A8D408 /* Main.storyboard in Resources */,
+				7024ECF521D3BC560000D7E3 /* Flags.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -672,14 +589,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7010B12921D35838006D7F87 /* FavoritesModuleConfigurator.swift in Sources */,
 				7010B11321D2E5A7006D7F87 /* ATDataService.swift in Sources */,
 				7010B0F721D28B7A006D7F87 /* ATCountry.swift in Sources */,
 				7010B15421D37DC3006D7F87 /* ATPresentable.swift in Sources */,
 				7010B11521D2E727006D7F87 /* ATNetworkDataManager.swift in Sources */,
 				7010B17121D38F14006D7F87 /* ATTabbarView.swift in Sources */,
 				7010B17D21D39CCF006D7F87 /* AtlasCoordinator.swift in Sources */,
-				7010B12321D35838006D7F87 /* FavoritesViewControllerInput.swift in Sources */,
+				7024ECE921D3A34B0000D7E3 /* CountryListItem.swift in Sources */,
 				7010B0F921D28D39006D7F87 /* ATCurrency.swift in Sources */,
 				7010B17A21D392E1006D7F87 /* ATRouterImp.swift in Sources */,
 				7010B10121D2AB54006D7F87 /* TextConstants.swift in Sources */,
@@ -687,40 +603,40 @@
 				7010B0FF21D2AA55006D7F87 /* ATRegion.swift in Sources */,
 				7010B0EA21D2861A006D7F87 /* ATResult.swift in Sources */,
 				7010B0F421D28859006D7F87 /* ATCountriesAPIWrapper.swift in Sources */,
+				7024ECE721D3A3170000D7E3 /* CountryListView.swift in Sources */,
 				7010B14D21D378B7006D7F87 /* ApplicationCoordinator.swift in Sources */,
 				7010B16321D3879A006D7F87 /* UIVIewControllerExtension.swift in Sources */,
-				7010B12521D35838006D7F87 /* FavoritesViewController.swift in Sources */,
+				7024ECED21D3A4F10000D7E3 /* ATFlagHelper.swift in Sources */,
 				7010B16F21D38DFF006D7F87 /* ATCoordinatorFactoryImp.swift in Sources */,
 				7010B15B21D3801D006D7F87 /* RegionsListItem.swift in Sources */,
 				7010B17321D3901F006D7F87 /* ATTabbarCoordinator.swift in Sources */,
+				7024ECF321D3AA1D0000D7E3 /* CountryListTableViewCell.swift in Sources */,
 				7010B16621D3880A006D7F87 /* Storyboards.swift in Sources */,
 				7010B17821D392B9006D7F87 /* ATRouter.swift in Sources */,
 				7010B15221D37D70006D7F87 /* ATModuleFactory.swift in Sources */,
 				7074DABE21D26AE000A8D408 /* ViewController.swift in Sources */,
 				7010B16821D38846006D7F87 /* NSObjectExtension.swift in Sources */,
 				7010B10F21D2DFE6006D7F87 /* UIViewExtension.swift in Sources */,
-				7010B12421D35838006D7F87 /* FavoritesModuleInitializer.swift in Sources */,
 				7010B0F021D2871D006D7F87 /* ATEndpoint.swift in Sources */,
-				7010B12221D35838006D7F87 /* FavoritesModelOutput.swift in Sources */,
 				7074DADA21D27A3400A8D408 /* ATHTTPClientProtocol.swift in Sources */,
-				7010B16121D38287006D7F87 /* RegionsListViewController.swift in Sources */,
+				7010B16121D38287006D7F87 /* RegionsListController.swift in Sources */,
 				7010B16D21D38D4B006D7F87 /* ATCoordinatorFactory.swift in Sources */,
+				7024ECEF21D3A7570000D7E3 /* CountryListParam.swift in Sources */,
 				7010B10721D2CB22006D7F87 /* ATHTTPClient.swift in Sources */,
 				7010B10321D2AC2C006D7F87 /* ATRegionGroup.swift in Sources */,
+				7024ECEB21D3A41F0000D7E3 /* CountryListController.swift in Sources */,
 				7010B11721D2ED88006D7F87 /* ArrayExtension.swift in Sources */,
 				7010B15921D37F5E006D7F87 /* RegionsListView.swift in Sources */,
+				7024ECF721D3BD4B0000D7E3 /* ATFlag.swift in Sources */,
 				7010B15F21D38165006D7F87 /* ATModuleFactoryImp.swift in Sources */,
-				7010B12621D35838006D7F87 /* FavoritesView.swift in Sources */,
 				7010B14A21D376DB006D7F87 /* MainTabBarViewController.swift in Sources */,
 				7010B10C21D2DF10006D7F87 /* ATActivityView.swift in Sources */,
 				7010B0EC21D28668006D7F87 /* ATAPIError.swift in Sources */,
 				7010B15721D37E15006D7F87 /* ATBaseView.swift in Sources */,
 				7010B17521D39186006D7F87 /* ATBaseCoordinator.swift in Sources */,
-				7010B12721D35838006D7F87 /* FavoritesModel.swift in Sources */,
 				7010B14F21D378D2006D7F87 /* ATCoordinator.swift in Sources */,
 				7074DABC21D26AE000A8D408 /* AppDelegate.swift in Sources */,
 				7010B10A21D2DD13006D7F87 /* ATAlert.swift in Sources */,
-				7010B12821D35838006D7F87 /* FavoritesModelInput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -867,15 +783,16 @@
 			baseConfigurationReference = 35A230AF56667650012BF7D5 /* Pods-Atlas.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B7GV2JGDQ9;
 				INFOPLIST_FILE = "$(SRCROOT)/Atlas/Application/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.test.Atlas;
+				PRODUCT_BUNDLE_IDENTIFIER = tech.madiar.IwantToKnow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
@@ -888,15 +805,16 @@
 			baseConfigurationReference = 55EA86C8042ABD4362830B1C /* Pods-Atlas.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B7GV2JGDQ9;
 				INFOPLIST_FILE = "$(SRCROOT)/Atlas/Application/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.test.Atlas;
+				PRODUCT_BUNDLE_IDENTIFIER = tech.madiar.IwantToKnow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;

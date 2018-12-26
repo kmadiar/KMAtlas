@@ -22,9 +22,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch" translatesAutoresizingMaskIntoConstraints="NO" id="NCq-RJ-Z1r">
+                                <rect key="frame" x="0.0" y="-80" width="375" height="747"/>
+                            </imageView>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HQi-FV-ImO">
+                                <rect key="frame" x="0.0" y="-80" width="375" height="747"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="0.48322452910958902" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nfa-sc-YjK">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" textLabel="vAA-hb-rAG" style="IBUITableViewCellStyleDefault" id="xCq-rp-dPO">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
@@ -36,12 +43,13 @@
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vAA-hb-rAG">
                                                     <rect key="frame" x="15" y="0.0" width="325" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.14792915239726026" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -52,10 +60,18 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="HQi-FV-ImO" firstAttribute="leading" secondItem="NCq-RJ-Z1r" secondAttribute="leading" id="6s2-em-XPb"/>
+                            <constraint firstItem="HQi-FV-ImO" firstAttribute="top" secondItem="NCq-RJ-Z1r" secondAttribute="top" id="9JR-rr-TLU"/>
                             <constraint firstItem="rfe-aQ-QgP" firstAttribute="top" secondItem="nfa-sc-YjK" secondAttribute="bottom" id="CTG-EI-Lqv"/>
+                            <constraint firstItem="NCq-RJ-Z1r" firstAttribute="trailing" secondItem="Opq-T7-PLT" secondAttribute="trailing" id="Jf5-tU-jfy"/>
+                            <constraint firstItem="rfe-aQ-QgP" firstAttribute="top" secondItem="NCq-RJ-Z1r" secondAttribute="bottom" id="KqQ-po-bfn"/>
                             <constraint firstItem="nfa-sc-YjK" firstAttribute="top" secondItem="3dd-qV-fqo" secondAttribute="top" id="NYu-Q7-ath"/>
+                            <constraint firstItem="HQi-FV-ImO" firstAttribute="bottom" secondItem="NCq-RJ-Z1r" secondAttribute="bottom" id="Sr6-lz-cQi"/>
                             <constraint firstItem="nfa-sc-YjK" firstAttribute="leading" secondItem="3dd-qV-fqo" secondAttribute="leading" id="b7p-7B-oif"/>
                             <constraint firstAttribute="trailing" secondItem="nfa-sc-YjK" secondAttribute="trailing" id="goL-pm-6d1"/>
+                            <constraint firstItem="HQi-FV-ImO" firstAttribute="trailing" secondItem="NCq-RJ-Z1r" secondAttribute="trailing" id="qd2-Kz-aVa"/>
+                            <constraint firstItem="NCq-RJ-Z1r" firstAttribute="top" secondItem="nZB-ay-967" secondAttribute="bottom" constant="-100" id="vFA-Vd-zBl"/>
+                            <constraint firstItem="NCq-RJ-Z1r" firstAttribute="leading" secondItem="Opq-T7-PLT" secondAttribute="leading" id="zK7-Cg-8m9"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Opq-T7-PLT"/>
                     </view>
@@ -65,7 +81,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NQk-XC-Uei" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="161" y="163"/>
+            <point key="canvasLocation" x="160.80000000000001" y="162.3688155922039"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="launch" width="990" height="498"/>
+    </resources>
 </document>

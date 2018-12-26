@@ -31,7 +31,7 @@ final class RegionsListController: ATRootViewController, RegionsListView {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "Regions"
+        navigationController?.setNavigationBarHidden(true, animated: false)
     }
 }
 
@@ -63,7 +63,6 @@ extension RegionsListController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         let item = items[(indexPath as NSIndexPath).row]
         cell.textLabel?.text = item.name
-//        cell.detailTextLabel?.text = item.subtitle
         return cell
     }
     

@@ -15,7 +15,7 @@ class ATNetworkDataManager: ATDataService {
             switch result {
             case .success(let countries):
                 strongSelf.setCountries(countries)
-            case .failure(let error):
+            case .failure:
                 break
             }
         }
@@ -99,10 +99,13 @@ class ATNetworkDataManager: ATDataService {
     }
     
     private func setCountries(_ countries: [ATCountry]) {
+        var c = countries
+        for (index, country) in countries.enumerated() {
+            c[index].flag = ATFlagHelper.emoji(by: country.alpha2Code)
+        }
         concurrentCoutriesQueue.async(flags: .barrier) { [weak self] in
             guard let strongSelf = self else { return }
-            strongSelf._countries = countries
+            strongSelf._countries = c
         }
-        self._countries = countries
     }
 }
