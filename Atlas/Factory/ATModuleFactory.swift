@@ -7,5 +7,5 @@
 //
 
 protocol ATModuleFactory {
-    func makeRegions() -> RegionsListView
+    func makeRegions(dataService: ATDataService) -> RegionsListView
 }

@@ -27,7 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     private func makeCoordinator() -> ATCoordinator {
         return ApplicationCoordinator(
             router: ATRouterImp(rootController: self.rootController),
-            coordinatorFactory: ATCoordinatorFactoryImp()
+            coordinatorFactory: ATCoordinatorFactoryImp(dataService: ATNetworkDataManager())
         )
     }
 }

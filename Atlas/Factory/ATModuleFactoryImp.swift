@@ -7,7 +7,10 @@
 //
 
 final class ATModuleFactoryImp: ATModuleFactory {
-    func makeRegions() -> RegionsListView {
-        return RegionsListController.atlas_controllerFromStoryboard(.regions)
+    func makeRegions(dataService: ATDataService) -> RegionsListView {
+        let vc = RegionsListController.atlas_controllerFromStoryboard(.regions)
+        vc.dataService = dataService
+        
+        return vc
     }
 }

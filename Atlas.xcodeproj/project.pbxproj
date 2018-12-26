@@ -54,6 +54,7 @@
 		7010B17521D39186006D7F87 /* ATBaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B17421D39186006D7F87 /* ATBaseCoordinator.swift */; };
 		7010B17821D392B9006D7F87 /* ATRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B17721D392B9006D7F87 /* ATRouter.swift */; };
 		7010B17A21D392E1006D7F87 /* ATRouterImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B17921D392E1006D7F87 /* ATRouterImp.swift */; };
+		7010B17D21D39CCF006D7F87 /* AtlasCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B17C21D39CCF006D7F87 /* AtlasCoordinator.swift */; };
 		7074DABC21D26AE000A8D408 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7074DABB21D26AE000A8D408 /* AppDelegate.swift */; };
 		7074DABE21D26AE000A8D408 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7074DABD21D26AE000A8D408 /* ViewController.swift */; };
 		7074DAC121D26AE000A8D408 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7074DABF21D26AE000A8D408 /* Main.storyboard */; };
@@ -120,6 +121,7 @@
 		7010B17421D39186006D7F87 /* ATBaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATBaseCoordinator.swift; sourceTree = "<group>"; };
 		7010B17721D392B9006D7F87 /* ATRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATRouter.swift; sourceTree = "<group>"; };
 		7010B17921D392E1006D7F87 /* ATRouterImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATRouterImp.swift; sourceTree = "<group>"; };
+		7010B17C21D39CCF006D7F87 /* AtlasCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtlasCoordinator.swift; sourceTree = "<group>"; };
 		7074DAB821D26AE000A8D408 /* Atlas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Atlas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7074DABB21D26AE000A8D408 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7074DABD21D26AE000A8D408 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -415,6 +417,14 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		7010B17B21D39C7C006D7F87 /* Atlas */ = {
+			isa = PBXGroup;
+			children = (
+				7010B17C21D39CCF006D7F87 /* AtlasCoordinator.swift */,
+			);
+			path = Atlas;
+			sourceTree = "<group>";
+		};
 		7074DAAF21D26AE000A8D408 = {
 			isa = PBXGroup;
 			children = (
@@ -472,6 +482,7 @@
 		7074DAD221D2742F00A8D408 /* Flows */ = {
 			isa = PBXGroup;
 			children = (
+				7010B17B21D39C7C006D7F87 /* Atlas */,
 				7010B11921D357D7006D7F87 /* Favorites */,
 				7010B11821D357B4006D7F87 /* Search */,
 				7074DAD321D2743700A8D408 /* MainTabBar */,
@@ -667,6 +678,7 @@
 				7010B15421D37DC3006D7F87 /* ATPresentable.swift in Sources */,
 				7010B11521D2E727006D7F87 /* ATNetworkDataManager.swift in Sources */,
 				7010B17121D38F14006D7F87 /* ATTabbarView.swift in Sources */,
+				7010B17D21D39CCF006D7F87 /* AtlasCoordinator.swift in Sources */,
 				7010B12321D35838006D7F87 /* FavoritesViewControllerInput.swift in Sources */,
 				7010B0F921D28D39006D7F87 /* ATCurrency.swift in Sources */,
 				7010B17A21D392E1006D7F87 /* ATRouterImp.swift in Sources */,
