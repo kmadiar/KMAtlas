@@ -25,6 +25,14 @@
 		7010B11321D2E5A7006D7F87 /* ATDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B11221D2E5A7006D7F87 /* ATDataService.swift */; };
 		7010B11521D2E727006D7F87 /* ATNetworkDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B11421D2E727006D7F87 /* ATNetworkDataManager.swift */; };
 		7010B11721D2ED88006D7F87 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B11621D2ED88006D7F87 /* ArrayExtension.swift */; };
+		7010B12221D35838006D7F87 /* FavoritesModelOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B11A21D35837006D7F87 /* FavoritesModelOutput.swift */; };
+		7010B12321D35838006D7F87 /* FavoritesViewControllerInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B11B21D35837006D7F87 /* FavoritesViewControllerInput.swift */; };
+		7010B12421D35838006D7F87 /* FavoritesModuleInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B11C21D35837006D7F87 /* FavoritesModuleInitializer.swift */; };
+		7010B12521D35838006D7F87 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B11D21D35837006D7F87 /* FavoritesViewController.swift */; };
+		7010B12621D35838006D7F87 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B11E21D35838006D7F87 /* FavoritesView.swift */; };
+		7010B12721D35838006D7F87 /* FavoritesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B11F21D35838006D7F87 /* FavoritesModel.swift */; };
+		7010B12821D35838006D7F87 /* FavoritesModelInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B12021D35838006D7F87 /* FavoritesModelInput.swift */; };
+		7010B12921D35838006D7F87 /* FavoritesModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B12121D35838006D7F87 /* FavoritesModuleConfigurator.swift */; };
 		7074DABC21D26AE000A8D408 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7074DABB21D26AE000A8D408 /* AppDelegate.swift */; };
 		7074DABE21D26AE000A8D408 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7074DABD21D26AE000A8D408 /* ViewController.swift */; };
 		7074DAC121D26AE000A8D408 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7074DABF21D26AE000A8D408 /* Main.storyboard */; };
@@ -54,6 +62,14 @@
 		7010B11221D2E5A7006D7F87 /* ATDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATDataService.swift; sourceTree = "<group>"; };
 		7010B11421D2E727006D7F87 /* ATNetworkDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATNetworkDataManager.swift; sourceTree = "<group>"; };
 		7010B11621D2ED88006D7F87 /* ArrayExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
+		7010B11A21D35837006D7F87 /* FavoritesModelOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesModelOutput.swift; sourceTree = "<group>"; };
+		7010B11B21D35837006D7F87 /* FavoritesViewControllerInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewControllerInput.swift; sourceTree = "<group>"; };
+		7010B11C21D35837006D7F87 /* FavoritesModuleInitializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesModuleInitializer.swift; sourceTree = "<group>"; };
+		7010B11D21D35837006D7F87 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		7010B11E21D35838006D7F87 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		7010B11F21D35838006D7F87 /* FavoritesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesModel.swift; sourceTree = "<group>"; };
+		7010B12021D35838006D7F87 /* FavoritesModelInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesModelInput.swift; sourceTree = "<group>"; };
+		7010B12121D35838006D7F87 /* FavoritesModuleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesModuleConfigurator.swift; sourceTree = "<group>"; };
 		7074DAB821D26AE000A8D408 /* Atlas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Atlas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7074DABB21D26AE000A8D408 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7074DABD21D26AE000A8D408 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -146,6 +162,28 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
+		7010B11821D357B4006D7F87 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		7010B11921D357D7006D7F87 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				7010B11A21D35837006D7F87 /* FavoritesModelOutput.swift */,
+				7010B11B21D35837006D7F87 /* FavoritesViewControllerInput.swift */,
+				7010B11C21D35837006D7F87 /* FavoritesModuleInitializer.swift */,
+				7010B11D21D35837006D7F87 /* FavoritesViewController.swift */,
+				7010B11E21D35838006D7F87 /* FavoritesView.swift */,
+				7010B11F21D35838006D7F87 /* FavoritesModel.swift */,
+				7010B12021D35838006D7F87 /* FavoritesModelInput.swift */,
+				7010B12121D35838006D7F87 /* FavoritesModuleConfigurator.swift */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
 		7074DAAF21D26AE000A8D408 = {
 			isa = PBXGroup;
 			children = (
@@ -200,6 +238,8 @@
 		7074DAD221D2742F00A8D408 /* Flows */ = {
 			isa = PBXGroup;
 			children = (
+				7010B11921D357D7006D7F87 /* Favorites */,
+				7010B11821D357B4006D7F87 /* Search */,
 				7074DAD321D2743700A8D408 /* Main */,
 			);
 			path = Flows;
@@ -381,26 +421,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7010B12921D35838006D7F87 /* FavoritesModuleConfigurator.swift in Sources */,
 				7010B11321D2E5A7006D7F87 /* ATDataService.swift in Sources */,
 				7010B0F721D28B7A006D7F87 /* ATCountry.swift in Sources */,
 				7010B11521D2E727006D7F87 /* ATNetworkDataManager.swift in Sources */,
+				7010B12321D35838006D7F87 /* FavoritesViewControllerInput.swift in Sources */,
 				7010B0F921D28D39006D7F87 /* ATCurrency.swift in Sources */,
 				7010B10121D2AB54006D7F87 /* TextConstants.swift in Sources */,
 				7010B0FB21D28DA4006D7F87 /* ATLanguage.swift in Sources */,
 				7010B0FF21D2AA55006D7F87 /* ATRegion.swift in Sources */,
 				7010B0EA21D2861A006D7F87 /* ATResult.swift in Sources */,
 				7010B0F421D28859006D7F87 /* ATCountriesAPIWrapper.swift in Sources */,
+				7010B12521D35838006D7F87 /* FavoritesViewController.swift in Sources */,
 				7074DABE21D26AE000A8D408 /* ViewController.swift in Sources */,
 				7010B10F21D2DFE6006D7F87 /* UIViewExtension.swift in Sources */,
+				7010B12421D35838006D7F87 /* FavoritesModuleInitializer.swift in Sources */,
 				7010B0F021D2871D006D7F87 /* ATEndpoint.swift in Sources */,
+				7010B12221D35838006D7F87 /* FavoritesModelOutput.swift in Sources */,
 				7074DADA21D27A3400A8D408 /* ATHTTPClientProtocol.swift in Sources */,
 				7010B10721D2CB22006D7F87 /* ATHTTPClient.swift in Sources */,
 				7010B10321D2AC2C006D7F87 /* ATRegionGroup.swift in Sources */,
 				7010B11721D2ED88006D7F87 /* ArrayExtension.swift in Sources */,
+				7010B12621D35838006D7F87 /* FavoritesView.swift in Sources */,
 				7010B10C21D2DF10006D7F87 /* ATActivityView.swift in Sources */,
 				7010B0EC21D28668006D7F87 /* ATAPIError.swift in Sources */,
+				7010B12721D35838006D7F87 /* FavoritesModel.swift in Sources */,
 				7074DABC21D26AE000A8D408 /* AppDelegate.swift in Sources */,
 				7010B10A21D2DD13006D7F87 /* ATAlert.swift in Sources */,
+				7010B12821D35838006D7F87 /* FavoritesModelInput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
