@@ -27,7 +27,6 @@ final class AtlasCoordinator: ATBaseCoordinator {
     //MARK: - Run current flow's controllers
     
     private func showRegionList() {
-        
         let itemsOutput = factory.makeRegions(dataService: dataService)
         itemsOutput.onItemSelect = { [weak self] (item) in
             let params: CountryListParam
@@ -44,11 +43,33 @@ final class AtlasCoordinator: ATBaseCoordinator {
 
     func showCountryList(_ params: CountryListParam) {
         let countryListOutput = factory.makeCoutryList(dataService: dataService, param: params)
+        countryListOutput.onItemSelect = showDetails
         router.push(countryListOutput)
     }
     
-//    private func showItemDetail(_ item: RegionsListItem) {
-//        let itemDetailFlowOutput = factory.makeCoutryList(dataService: dataService, param: item)
-//        router.push(itemDetailFlowOutput)
-//    }
+    func showCountryDetails(_ details: CountryDetails) {
+        let countryDetailsOutput = factory.makeCountryDetails(details: details)
+        countryDetailsOutput.onItemSelect = showDetails
+        router.push(countryDetailsOutput)
+    }
+    
+    lazy var showDetails: ((CountryListItem) -> ()) = { [weak self] item in
+        guard let strongSelf = self else { return }
+        
+        if let c = strongSelf.dataService.getCountry(by: item.name) {
+            let joiner = ", "
+            let currencies = c.currencies.compactMap({ $0.name }).joined(separator: joiner)
+            let languages = c.languages.compactMap({ $0.name }).joined(separator: joiner)
+            var items: [CountryListItem] = []
+            for border in c.borders {
+                if let resultCountry = strongSelf.dataService.getCountry_alpha3(by: border) {
+                    items.append(CountryListItem(countryFlag: resultCountry.flag, name: resultCountry.name, nativeName: resultCountry.nativeName) )
+                }
+            }
+            
+            let details = CountryDetails(name: c.name, flag: c.flag, currency: currencies, languages: languages, location: c.latlng, items: items)
+            
+            strongSelf.showCountryDetails(details)
+        }
+    }
 }

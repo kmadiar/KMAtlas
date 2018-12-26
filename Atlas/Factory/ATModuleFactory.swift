@@ -9,4 +9,5 @@
 protocol ATModuleFactory {
     func makeRegions(dataService: ATDataService) -> RegionsListView
     func makeCoutryList(dataService: ATDataService, param: CountryListParam) -> CountryListView
+    func makeCountryDetails(details: CountryDetails) -> CountryDetailView
 }

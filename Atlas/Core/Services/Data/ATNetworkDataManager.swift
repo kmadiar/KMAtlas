@@ -9,6 +9,14 @@
 import Foundation
 
 class ATNetworkDataManager: ATDataService {
+    func getCountry_alpha3(by alpha3Code: String) -> ATCountry? {
+        return currentCountries().first(where: { $0.alpha3Code == alpha3Code })
+    }
+    
+    func getCountry(by name: String) -> ATCountry? {
+        return currentCountries().first(where: { $0.name == name })
+    }
+    
     func refreshData() {
         getAll { [weak self] (result) in
             guard let strongSelf = self else { return }

@@ -7,6 +7,13 @@
 //
 
 final class ATModuleFactoryImp: ATModuleFactory {
+    func makeCountryDetails(details: CountryDetails) -> CountryDetailView {
+        let vc = CountryDetailController.atlas_controllerFromStoryboard(.country)
+        vc.details = details
+        
+        return vc
+    }
+    
     func makeCoutryList(dataService: ATDataService, param: CountryListParam) -> CountryListView {
         let vc = CountryListController.atlas_controllerFromStoryboard(.countries)
         vc.dataService = dataService
