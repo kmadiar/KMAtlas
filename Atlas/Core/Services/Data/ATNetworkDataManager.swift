@@ -9,6 +9,18 @@
 import Foundation
 
 class ATNetworkDataManager: ATDataService {
+    func refreshData() {
+        getAll { [weak self] (result) in
+            guard let strongSelf = self else { return }
+            switch result {
+            case .success(let countries):
+                strongSelf.setCountries(countries)
+            case .failure(let error):
+                break
+            }
+        }
+    }
+    
     func getRegions(completion: @escaping (ATResult<[ATRegion], ATAPIError>) -> ()) -> [ATRegion] {
         let countries = currentCountries()
         if countries.count == 0 {

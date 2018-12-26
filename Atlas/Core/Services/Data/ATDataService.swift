@@ -9,6 +9,7 @@
 import Foundation
 
 protocol ATDataService {
+    func refreshData()
     func getRegions(completion: @escaping (ATResult<[ATRegion], ATAPIError>) -> ()) -> [ATRegion]
     func getRegionGroups(completion: @escaping (ATResult<[ATRegionGroup], ATAPIError>) -> ()) -> [ATRegionGroup]
     func getCountries(by name: String?, completion: @escaping (ATResult<[ATCountry], ATAPIError>) -> ()) -> [ATCountry]
