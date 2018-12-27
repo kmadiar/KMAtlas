@@ -36,6 +36,8 @@ final class CountryDetailController: ATRootViewController, CountryDetailView {
         }
     }
     
+    var annotation: MKPointAnnotation!
+    
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var flagLabel: UILabel!
@@ -74,6 +76,7 @@ final class CountryDetailController: ATRootViewController, CountryDetailView {
 
 extension CountryDetailController: UITableViewDelegate, UITableViewDataSource {
     
+    
     func refreshData() {
         guard let d = details else {
             return
@@ -85,8 +88,10 @@ extension CountryDetailController: UITableViewDelegate, UITableViewDataSource {
         let center = CLLocationCoordinate2D(latitude: lat, longitude: lon)
         let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 5.0, longitudeDelta: 5.0))
         
+        mapView?.removeAnnotations([annotation])
+        
         mapView?.setRegion(region, animated: true)
-        let annotation = MKPointAnnotation()
+        annotation = MKPointAnnotation()
         annotation.coordinate = center
         mapView?.addAnnotation(annotation)
         

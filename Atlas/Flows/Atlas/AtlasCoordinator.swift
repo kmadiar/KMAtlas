@@ -47,13 +47,11 @@ final class AtlasCoordinator: ATBaseCoordinator {
         router.push(countryListOutput)
     }
     
+    // TODO extract separate coordinator
     func showCountryDetails(_ details: CountryDetails) {
         if stack.count == 1 {
             let countryDetailsOutput = factory.makeCountryDetails(details: details)
             countryDetailsOutput.onItemSelect = showDetails
-            countryDetailsOutput.onBack = { [weak self] in
-//                self?.router.popModule()
-            }
             router.push(countryDetailsOutput)
         } else {
             pushModule(details: details)
@@ -64,7 +62,6 @@ final class AtlasCoordinator: ATBaseCoordinator {
     private var left: CountryDetailView?
     private var current: CountryDetailView?
     private var right: CountryDetailView?
-    
     
     private func pushModule(details: CountryDetails) {
         //prepare next module
@@ -92,7 +89,6 @@ final class AtlasCoordinator: ATBaseCoordinator {
     
     private func popModule() {
         _ = stack.removeLast()
-//        router.popModule()
         
         let tmp = current
         current = left
