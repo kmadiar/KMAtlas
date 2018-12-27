@@ -64,7 +64,8 @@ extension CountryListController: UITableViewDelegate, UITableViewDataSource {
             case .success(let countries):
                 strongSelf.items = countries.map({ CountryListItem(countryFlag: $0.flag, name: $0.name, nativeName: $0.nativeName) })
             case .failure(let error):
-                strongSelf.alert.show(errorMessage: error.customDescription)
+                print(error)
+//                strongSelf.alert.show(errorMessage: error.customDescription)
             }
         }
         
