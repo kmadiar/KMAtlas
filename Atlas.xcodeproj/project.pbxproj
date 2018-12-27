@@ -1,0 +1,907 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1359C5389C7FEC7EFC3AADE8 /* Pods_Atlas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 445C8D1D91DCF37A3CA1C0E3 /* Pods_Atlas.framework */; };
+		7010B0EA21D2861A006D7F87 /* ATResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B0E921D2861A006D7F87 /* ATResult.swift */; };
+		7010B0EC21D28668006D7F87 /* ATAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B0EB21D28668006D7F87 /* ATAPIError.swift */; };
+		7010B0F021D2871D006D7F87 /* ATEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B0EF21D2871D006D7F87 /* ATEndpoint.swift */; };
+		7010B0F421D28859006D7F87 /* ATCountriesAPIWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B0F321D28859006D7F87 /* ATCountriesAPIWrapper.swift */; };
+		7010B0F721D28B7A006D7F87 /* ATCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B0F621D28B7A006D7F87 /* ATCountry.swift */; };
+		7010B0F921D28D39006D7F87 /* ATCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B0F821D28D39006D7F87 /* ATCurrency.swift */; };
+		7010B0FB21D28DA4006D7F87 /* ATLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B0FA21D28DA4006D7F87 /* ATLanguage.swift */; };
+		7010B0FF21D2AA55006D7F87 /* ATRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B0FE21D2AA55006D7F87 /* ATRegion.swift */; };
+		7010B10121D2AB54006D7F87 /* TextConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B10021D2AB54006D7F87 /* TextConstants.swift */; };
+		7010B10321D2AC2C006D7F87 /* ATRegionGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B10221D2AC2C006D7F87 /* ATRegionGroup.swift */; };
+		7010B10721D2CB22006D7F87 /* ATHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B10621D2CB22006D7F87 /* ATHTTPClient.swift */; };
+		7010B10A21D2DD13006D7F87 /* ATAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B10921D2DD13006D7F87 /* ATAlert.swift */; };
+		7010B10C21D2DF10006D7F87 /* ATActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B10B21D2DF10006D7F87 /* ATActivityView.swift */; };
+		7010B10F21D2DFE6006D7F87 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B10E21D2DFE6006D7F87 /* UIViewExtension.swift */; };
+		7010B11321D2E5A7006D7F87 /* ATDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B11221D2E5A7006D7F87 /* ATDataService.swift */; };
+		7010B11521D2E727006D7F87 /* ATNetworkDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B11421D2E727006D7F87 /* ATNetworkDataManager.swift */; };
+		7010B11721D2ED88006D7F87 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B11621D2ED88006D7F87 /* ArrayExtension.swift */; };
+		7010B14A21D376DB006D7F87 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B14921D376DB006D7F87 /* MainTabBarViewController.swift */; };
+		7010B14D21D378B7006D7F87 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B14C21D378B7006D7F87 /* ApplicationCoordinator.swift */; };
+		7010B14F21D378D2006D7F87 /* ATCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B14E21D378D2006D7F87 /* ATCoordinator.swift */; };
+		7010B15221D37D70006D7F87 /* ATModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B15121D37D70006D7F87 /* ATModuleFactory.swift */; };
+		7010B15421D37DC3006D7F87 /* ATPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B15321D37DC3006D7F87 /* ATPresentable.swift */; };
+		7010B15721D37E15006D7F87 /* ATBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B15621D37E15006D7F87 /* ATBaseView.swift */; };
+		7010B15921D37F5E006D7F87 /* RegionsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B15821D37F5E006D7F87 /* RegionsListView.swift */; };
+		7010B15B21D3801D006D7F87 /* RegionsListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B15A21D3801D006D7F87 /* RegionsListItem.swift */; };
+		7010B15F21D38165006D7F87 /* ATModuleFactoryImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B15E21D38165006D7F87 /* ATModuleFactoryImp.swift */; };
+		7010B16121D38287006D7F87 /* RegionsListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B16021D38287006D7F87 /* RegionsListController.swift */; };
+		7010B16321D3879A006D7F87 /* UIVIewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B16221D3879A006D7F87 /* UIVIewControllerExtension.swift */; };
+		7010B16621D3880A006D7F87 /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B16521D3880A006D7F87 /* Storyboards.swift */; };
+		7010B16821D38846006D7F87 /* NSObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B16721D38846006D7F87 /* NSObjectExtension.swift */; };
+		7010B16A21D388E4006D7F87 /* Regions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7010B16921D388E4006D7F87 /* Regions.storyboard */; };
+		7010B16D21D38D4B006D7F87 /* ATCoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B16C21D38D4B006D7F87 /* ATCoordinatorFactory.swift */; };
+		7010B16F21D38DFF006D7F87 /* ATCoordinatorFactoryImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B16E21D38DFF006D7F87 /* ATCoordinatorFactoryImp.swift */; };
+		7010B17121D38F14006D7F87 /* ATTabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B17021D38F14006D7F87 /* ATTabbarView.swift */; };
+		7010B17321D3901F006D7F87 /* ATTabbarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B17221D3901F006D7F87 /* ATTabbarCoordinator.swift */; };
+		7010B17521D39186006D7F87 /* ATBaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B17421D39186006D7F87 /* ATBaseCoordinator.swift */; };
+		7010B17821D392B9006D7F87 /* ATRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B17721D392B9006D7F87 /* ATRouter.swift */; };
+		7010B17A21D392E1006D7F87 /* ATRouterImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B17921D392E1006D7F87 /* ATRouterImp.swift */; };
+		7010B17D21D39CCF006D7F87 /* AtlasCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B17C21D39CCF006D7F87 /* AtlasCoordinator.swift */; };
+		7024ECE721D3A3170000D7E3 /* CountryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7024ECE621D3A3170000D7E3 /* CountryListView.swift */; };
+		7024ECE921D3A34B0000D7E3 /* CountryListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7024ECE821D3A34B0000D7E3 /* CountryListItem.swift */; };
+		7024ECEB21D3A41F0000D7E3 /* CountryListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7024ECEA21D3A41F0000D7E3 /* CountryListController.swift */; };
+		7024ECED21D3A4F10000D7E3 /* ATFlagHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7024ECEC21D3A4F10000D7E3 /* ATFlagHelper.swift */; };
+		7024ECEF21D3A7570000D7E3 /* CountryListParam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7024ECEE21D3A7570000D7E3 /* CountryListParam.swift */; };
+		7024ECF121D3A8AE0000D7E3 /* Countries.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7024ECF021D3A8AD0000D7E3 /* Countries.storyboard */; };
+		7024ECF321D3AA1D0000D7E3 /* CountryListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7024ECF221D3AA1D0000D7E3 /* CountryListTableViewCell.swift */; };
+		7024ECF521D3BC560000D7E3 /* Flags.json in Resources */ = {isa = PBXBuildFile; fileRef = 7024ECF421D3BC560000D7E3 /* Flags.json */; };
+		7024ECF721D3BD4B0000D7E3 /* ATFlag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7024ECF621D3BD4B0000D7E3 /* ATFlag.swift */; };
+		7024ECF921D41F9F0000D7E3 /* Country.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7024ECF821D41F9F0000D7E3 /* Country.storyboard */; };
+		7024ECFB21D420250000D7E3 /* ContryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7024ECFA21D420250000D7E3 /* ContryDetailView.swift */; };
+		7024ECFD21D422A20000D7E3 /* CountryDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7024ECFC21D422A20000D7E3 /* CountryDetailController.swift */; };
+		7024ECFF21D4280E0000D7E3 /* CountryDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7024ECFE21D4280E0000D7E3 /* CountryDetails.swift */; };
+		7024ED0121D43EFE0000D7E3 /* SearchListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7024ED0021D43EFE0000D7E3 /* SearchListView.swift */; };
+		7024ED0521D440A30000D7E3 /* SearchListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7024ED0421D440A30000D7E3 /* SearchListController.swift */; };
+		7024ED0721D4418B0000D7E3 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7024ED0621D4418B0000D7E3 /* Search.storyboard */; };
+		7024ED0921D442FD0000D7E3 /* SearchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7024ED0821D442FD0000D7E3 /* SearchCoordinator.swift */; };
+		7024ED0B21D4AA570000D7E3 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7024ED0A21D4AA570000D7E3 /* SearchViewModel.swift */; };
+		7024ED0D21D559C80000D7E3 /* FavoritesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7024ED0C21D559C80000D7E3 /* FavoritesCoordinator.swift */; };
+		7024ED0F21D55B630000D7E3 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7024ED0E21D55B630000D7E3 /* FavoritesView.swift */; };
+		7024ED1121D55B920000D7E3 /* FavoritesListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7024ED1021D55B920000D7E3 /* FavoritesListItem.swift */; };
+		7024ED1321D55C840000D7E3 /* FavoritesListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7024ED1221D55C840000D7E3 /* FavoritesListController.swift */; };
+		7024ED1521D55CEE0000D7E3 /* Favorites.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7024ED1421D55CEE0000D7E3 /* Favorites.storyboard */; };
+		7074DABC21D26AE000A8D408 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7074DABB21D26AE000A8D408 /* AppDelegate.swift */; };
+		7074DABE21D26AE000A8D408 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7074DABD21D26AE000A8D408 /* ViewController.swift */; };
+		7074DAC121D26AE000A8D408 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7074DABF21D26AE000A8D408 /* Main.storyboard */; };
+		7074DAC621D26AE000A8D408 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7074DAC521D26AE000A8D408 /* Assets.xcassets */; };
+		7074DAC921D26AE000A8D408 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7074DAC721D26AE000A8D408 /* LaunchScreen.storyboard */; };
+		7074DADA21D27A3400A8D408 /* ATHTTPClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7074DAD921D27A3400A8D408 /* ATHTTPClientProtocol.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		35A230AF56667650012BF7D5 /* Pods-Atlas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Atlas.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Atlas/Pods-Atlas.debug.xcconfig"; sourceTree = "<group>"; };
+		445C8D1D91DCF37A3CA1C0E3 /* Pods_Atlas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Atlas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55EA86C8042ABD4362830B1C /* Pods-Atlas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Atlas.release.xcconfig"; path = "Pods/Target Support Files/Pods-Atlas/Pods-Atlas.release.xcconfig"; sourceTree = "<group>"; };
+		7010B0E921D2861A006D7F87 /* ATResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATResult.swift; sourceTree = "<group>"; };
+		7010B0EB21D28668006D7F87 /* ATAPIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATAPIError.swift; sourceTree = "<group>"; };
+		7010B0EF21D2871D006D7F87 /* ATEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATEndpoint.swift; sourceTree = "<group>"; };
+		7010B0F321D28859006D7F87 /* ATCountriesAPIWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATCountriesAPIWrapper.swift; sourceTree = "<group>"; };
+		7010B0F621D28B7A006D7F87 /* ATCountry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATCountry.swift; sourceTree = "<group>"; };
+		7010B0F821D28D39006D7F87 /* ATCurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATCurrency.swift; sourceTree = "<group>"; };
+		7010B0FA21D28DA4006D7F87 /* ATLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATLanguage.swift; sourceTree = "<group>"; };
+		7010B0FE21D2AA55006D7F87 /* ATRegion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATRegion.swift; sourceTree = "<group>"; };
+		7010B10021D2AB54006D7F87 /* TextConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextConstants.swift; sourceTree = "<group>"; };
+		7010B10221D2AC2C006D7F87 /* ATRegionGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATRegionGroup.swift; sourceTree = "<group>"; };
+		7010B10621D2CB22006D7F87 /* ATHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATHTTPClient.swift; sourceTree = "<group>"; };
+		7010B10921D2DD13006D7F87 /* ATAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATAlert.swift; sourceTree = "<group>"; };
+		7010B10B21D2DF10006D7F87 /* ATActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATActivityView.swift; sourceTree = "<group>"; };
+		7010B10E21D2DFE6006D7F87 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		7010B11221D2E5A7006D7F87 /* ATDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATDataService.swift; sourceTree = "<group>"; };
+		7010B11421D2E727006D7F87 /* ATNetworkDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATNetworkDataManager.swift; sourceTree = "<group>"; };
+		7010B11621D2ED88006D7F87 /* ArrayExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
+		7010B14921D376DB006D7F87 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		7010B14C21D378B7006D7F87 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
+		7010B14E21D378D2006D7F87 /* ATCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATCoordinator.swift; sourceTree = "<group>"; };
+		7010B15121D37D70006D7F87 /* ATModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATModuleFactory.swift; sourceTree = "<group>"; };
+		7010B15321D37DC3006D7F87 /* ATPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATPresentable.swift; sourceTree = "<group>"; };
+		7010B15621D37E15006D7F87 /* ATBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATBaseView.swift; sourceTree = "<group>"; };
+		7010B15821D37F5E006D7F87 /* RegionsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionsListView.swift; sourceTree = "<group>"; };
+		7010B15A21D3801D006D7F87 /* RegionsListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionsListItem.swift; sourceTree = "<group>"; };
+		7010B15E21D38165006D7F87 /* ATModuleFactoryImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATModuleFactoryImp.swift; sourceTree = "<group>"; };
+		7010B16021D38287006D7F87 /* RegionsListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionsListController.swift; sourceTree = "<group>"; };
+		7010B16221D3879A006D7F87 /* UIVIewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIVIewControllerExtension.swift; sourceTree = "<group>"; };
+		7010B16521D3880A006D7F87 /* Storyboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
+		7010B16721D38846006D7F87 /* NSObjectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectExtension.swift; sourceTree = "<group>"; };
+		7010B16921D388E4006D7F87 /* Regions.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Regions.storyboard; sourceTree = "<group>"; };
+		7010B16C21D38D4B006D7F87 /* ATCoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATCoordinatorFactory.swift; sourceTree = "<group>"; };
+		7010B16E21D38DFF006D7F87 /* ATCoordinatorFactoryImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATCoordinatorFactoryImp.swift; sourceTree = "<group>"; };
+		7010B17021D38F14006D7F87 /* ATTabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATTabbarView.swift; sourceTree = "<group>"; };
+		7010B17221D3901F006D7F87 /* ATTabbarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATTabbarCoordinator.swift; sourceTree = "<group>"; };
+		7010B17421D39186006D7F87 /* ATBaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATBaseCoordinator.swift; sourceTree = "<group>"; };
+		7010B17721D392B9006D7F87 /* ATRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATRouter.swift; sourceTree = "<group>"; };
+		7010B17921D392E1006D7F87 /* ATRouterImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATRouterImp.swift; sourceTree = "<group>"; };
+		7010B17C21D39CCF006D7F87 /* AtlasCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtlasCoordinator.swift; sourceTree = "<group>"; };
+		7024ECE621D3A3170000D7E3 /* CountryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CountryListView.swift; path = Atlas/Modules/ContryList/CountryListView.swift; sourceTree = SOURCE_ROOT; };
+		7024ECE821D3A34B0000D7E3 /* CountryListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListItem.swift; sourceTree = "<group>"; };
+		7024ECEA21D3A41F0000D7E3 /* CountryListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListController.swift; sourceTree = "<group>"; };
+		7024ECEC21D3A4F10000D7E3 /* ATFlagHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATFlagHelper.swift; sourceTree = "<group>"; };
+		7024ECEE21D3A7570000D7E3 /* CountryListParam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListParam.swift; sourceTree = "<group>"; };
+		7024ECF021D3A8AD0000D7E3 /* Countries.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Countries.storyboard; sourceTree = "<group>"; };
+		7024ECF221D3AA1D0000D7E3 /* CountryListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListTableViewCell.swift; sourceTree = "<group>"; };
+		7024ECF421D3BC560000D7E3 /* Flags.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Flags.json; sourceTree = "<group>"; };
+		7024ECF621D3BD4B0000D7E3 /* ATFlag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATFlag.swift; sourceTree = "<group>"; };
+		7024ECF821D41F9F0000D7E3 /* Country.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Country.storyboard; sourceTree = "<group>"; };
+		7024ECFA21D420250000D7E3 /* ContryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContryDetailView.swift; sourceTree = "<group>"; };
+		7024ECFC21D422A20000D7E3 /* CountryDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailController.swift; sourceTree = "<group>"; };
+		7024ECFE21D4280E0000D7E3 /* CountryDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetails.swift; sourceTree = "<group>"; };
+		7024ED0021D43EFE0000D7E3 /* SearchListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchListView.swift; sourceTree = "<group>"; };
+		7024ED0421D440A30000D7E3 /* SearchListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchListController.swift; sourceTree = "<group>"; };
+		7024ED0621D4418B0000D7E3 /* Search.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		7024ED0821D442FD0000D7E3 /* SearchCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCoordinator.swift; sourceTree = "<group>"; };
+		7024ED0A21D4AA570000D7E3 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		7024ED0C21D559C80000D7E3 /* FavoritesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesCoordinator.swift; sourceTree = "<group>"; };
+		7024ED0E21D55B630000D7E3 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		7024ED1021D55B920000D7E3 /* FavoritesListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListItem.swift; sourceTree = "<group>"; };
+		7024ED1221D55C840000D7E3 /* FavoritesListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListController.swift; sourceTree = "<group>"; };
+		7024ED1421D55CEE0000D7E3 /* Favorites.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Favorites.storyboard; sourceTree = "<group>"; };
+		7074DAB821D26AE000A8D408 /* Atlas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Atlas.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7074DABB21D26AE000A8D408 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7074DABD21D26AE000A8D408 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7074DAC021D26AE000A8D408 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7074DAC521D26AE000A8D408 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7074DAC821D26AE000A8D408 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7074DACA21D26AE000A8D408 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7074DAD921D27A3400A8D408 /* ATHTTPClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATHTTPClientProtocol.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7074DAB521D26AE000A8D408 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1359C5389C7FEC7EFC3AADE8 /* Pods_Atlas.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		439A1A01F405389EB3A48D03 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				35A230AF56667650012BF7D5 /* Pods-Atlas.debug.xcconfig */,
+				55EA86C8042ABD4362830B1C /* Pods-Atlas.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7010B0ED21D28705006D7F87 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				7010B0EE21D2870F006D7F87 /* Protocols */,
+				7074DAD721D27A0300A8D408 /* HTTPClient */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		7010B0EE21D2870F006D7F87 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				7010B0EF21D2871D006D7F87 /* ATEndpoint.swift */,
+				7074DAD921D27A3400A8D408 /* ATHTTPClientProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		7010B0F221D2883F006D7F87 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				7010B0F321D28859006D7F87 /* ATCountriesAPIWrapper.swift */,
+				7024ECEC21D3A4F10000D7E3 /* ATFlagHelper.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		7010B10821D2DCE2006D7F87 /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				7010B10921D2DD13006D7F87 /* ATAlert.swift */,
+				7010B10B21D2DF10006D7F87 /* ATActivityView.swift */,
+			);
+			path = CustomUI;
+			sourceTree = "<group>";
+		};
+		7010B10D21D2DFCC006D7F87 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7010B10E21D2DFE6006D7F87 /* UIViewExtension.swift */,
+				7010B11621D2ED88006D7F87 /* ArrayExtension.swift */,
+				7010B16221D3879A006D7F87 /* UIVIewControllerExtension.swift */,
+				7010B16721D38846006D7F87 /* NSObjectExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7010B11021D2E576006D7F87 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7010B11121D2E588006D7F87 /* Data */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		7010B11121D2E588006D7F87 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				7010B11221D2E5A7006D7F87 /* ATDataService.swift */,
+				7010B11421D2E727006D7F87 /* ATNetworkDataManager.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		7010B11821D357B4006D7F87 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				7024ED0821D442FD0000D7E3 /* SearchCoordinator.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		7010B11921D357D7006D7F87 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				7024ED0C21D559C80000D7E3 /* FavoritesCoordinator.swift */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		7010B12A21D37242006D7F87 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				7010B14E21D378D2006D7F87 /* ATCoordinator.swift */,
+				7010B15321D37DC3006D7F87 /* ATPresentable.swift */,
+				7010B15621D37E15006D7F87 /* ATBaseView.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		7010B12F21D3751A006D7F87 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				7024ECE521D3A2E30000D7E3 /* ContryList */,
+				7010B13421D3759B006D7F87 /* Search */,
+				7010B13321D3758C006D7F87 /* ContryDetails */,
+				7010B13121D37572006D7F87 /* RegionList */,
+				7010B13021D37524006D7F87 /* Favorite */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		7010B13021D37524006D7F87 /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+				7024ED0E21D55B630000D7E3 /* FavoritesView.swift */,
+				7024ED1021D55B920000D7E3 /* FavoritesListItem.swift */,
+				7024ED1221D55C840000D7E3 /* FavoritesListController.swift */,
+			);
+			path = Favorite;
+			sourceTree = "<group>";
+		};
+		7010B13121D37572006D7F87 /* RegionList */ = {
+			isa = PBXGroup;
+			children = (
+				7010B15821D37F5E006D7F87 /* RegionsListView.swift */,
+				7010B15A21D3801D006D7F87 /* RegionsListItem.swift */,
+				7010B16021D38287006D7F87 /* RegionsListController.swift */,
+			);
+			path = RegionList;
+			sourceTree = "<group>";
+		};
+		7010B13321D3758C006D7F87 /* ContryDetails */ = {
+			isa = PBXGroup;
+			children = (
+				7024ECFA21D420250000D7E3 /* ContryDetailView.swift */,
+				7024ECFC21D422A20000D7E3 /* CountryDetailController.swift */,
+				7024ECFE21D4280E0000D7E3 /* CountryDetails.swift */,
+			);
+			path = ContryDetails;
+			sourceTree = "<group>";
+		};
+		7010B13421D3759B006D7F87 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				7024ED0021D43EFE0000D7E3 /* SearchListView.swift */,
+				7024ED0421D440A30000D7E3 /* SearchListController.swift */,
+				7024ED0A21D4AA570000D7E3 /* SearchViewModel.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		7010B14B21D378A6006D7F87 /* ApplicationCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				7010B14C21D378B7006D7F87 /* ApplicationCoordinator.swift */,
+			);
+			path = ApplicationCoordinator;
+			sourceTree = "<group>";
+		};
+		7010B15D21D38140006D7F87 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				7010B15121D37D70006D7F87 /* ATModuleFactory.swift */,
+				7010B16E21D38DFF006D7F87 /* ATCoordinatorFactoryImp.swift */,
+				7010B15E21D38165006D7F87 /* ATModuleFactoryImp.swift */,
+				7010B16C21D38D4B006D7F87 /* ATCoordinatorFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		7010B16421D387FF006D7F87 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				7024ED0621D4418B0000D7E3 /* Search.storyboard */,
+				7024ECF021D3A8AD0000D7E3 /* Countries.storyboard */,
+				7074DAC721D26AE000A8D408 /* LaunchScreen.storyboard */,
+				7074DABF21D26AE000A8D408 /* Main.storyboard */,
+				7010B16921D388E4006D7F87 /* Regions.storyboard */,
+				7010B16521D3880A006D7F87 /* Storyboards.swift */,
+				7024ECF821D41F9F0000D7E3 /* Country.storyboard */,
+				7024ED1421D55CEE0000D7E3 /* Favorites.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		7010B17621D392AB006D7F87 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				7010B17721D392B9006D7F87 /* ATRouter.swift */,
+				7010B17921D392E1006D7F87 /* ATRouterImp.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		7010B17B21D39C7C006D7F87 /* Atlas */ = {
+			isa = PBXGroup;
+			children = (
+				7010B17C21D39CCF006D7F87 /* AtlasCoordinator.swift */,
+			);
+			path = Atlas;
+			sourceTree = "<group>";
+		};
+		7024ECE521D3A2E30000D7E3 /* ContryList */ = {
+			isa = PBXGroup;
+			children = (
+				7024ECE621D3A3170000D7E3 /* CountryListView.swift */,
+				7024ECE821D3A34B0000D7E3 /* CountryListItem.swift */,
+				7024ECEA21D3A41F0000D7E3 /* CountryListController.swift */,
+				7024ECEE21D3A7570000D7E3 /* CountryListParam.swift */,
+				7024ECF221D3AA1D0000D7E3 /* CountryListTableViewCell.swift */,
+			);
+			path = ContryList;
+			sourceTree = "<group>";
+		};
+		7074DAAF21D26AE000A8D408 = {
+			isa = PBXGroup;
+			children = (
+				7074DABA21D26AE000A8D408 /* Atlas */,
+				7074DAB921D26AE000A8D408 /* Products */,
+				439A1A01F405389EB3A48D03 /* Pods */,
+				AF0A5DEC789D88D6A0B3BE32 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7074DAB921D26AE000A8D408 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7074DAB821D26AE000A8D408 /* Atlas.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7074DABA21D26AE000A8D408 /* Atlas */ = {
+			isa = PBXGroup;
+			children = (
+				7010B17621D392AB006D7F87 /* Router */,
+				7010B16421D387FF006D7F87 /* Storyboards */,
+				7010B15D21D38140006D7F87 /* Factory */,
+				7010B12F21D3751A006D7F87 /* Modules */,
+				7010B12A21D37242006D7F87 /* Protocols */,
+				7074DAD621D279F900A8D408 /* Core */,
+				7074DAD521D2747E00A8D408 /* Model */,
+				7074DAD221D2742F00A8D408 /* Flows */,
+				7074DAD021D26BF700A8D408 /* Application */,
+			);
+			path = Atlas;
+			sourceTree = "<group>";
+		};
+		7074DAD021D26BF700A8D408 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				7010B14B21D378A6006D7F87 /* ApplicationCoordinator */,
+				7074DAD121D26C3700A8D408 /* Resources */,
+				7074DABB21D26AE000A8D408 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		7074DAD121D26C3700A8D408 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7074DACA21D26AE000A8D408 /* Info.plist */,
+				7074DAC521D26AE000A8D408 /* Assets.xcassets */,
+				7010B10021D2AB54006D7F87 /* TextConstants.swift */,
+				7024ECF421D3BC560000D7E3 /* Flags.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7074DAD221D2742F00A8D408 /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				7010B17B21D39C7C006D7F87 /* Atlas */,
+				7010B11921D357D7006D7F87 /* Favorites */,
+				7010B11821D357B4006D7F87 /* Search */,
+				7074DAD321D2743700A8D408 /* MainTabBar */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		7074DAD321D2743700A8D408 /* MainTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				7074DABD21D26AE000A8D408 /* ViewController.swift */,
+				7010B14921D376DB006D7F87 /* MainTabBarViewController.swift */,
+				7010B17021D38F14006D7F87 /* ATTabbarView.swift */,
+				7010B17221D3901F006D7F87 /* ATTabbarCoordinator.swift */,
+			);
+			path = MainTabBar;
+			sourceTree = "<group>";
+		};
+		7074DAD521D2747E00A8D408 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7010B0F621D28B7A006D7F87 /* ATCountry.swift */,
+				7010B0F821D28D39006D7F87 /* ATCurrency.swift */,
+				7010B0FA21D28DA4006D7F87 /* ATLanguage.swift */,
+				7010B0FE21D2AA55006D7F87 /* ATRegion.swift */,
+				7010B10221D2AC2C006D7F87 /* ATRegionGroup.swift */,
+				7024ECF621D3BD4B0000D7E3 /* ATFlag.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7074DAD621D279F900A8D408 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				7010B11021D2E576006D7F87 /* Services */,
+				7010B0F221D2883F006D7F87 /* Utils */,
+				7010B10D21D2DFCC006D7F87 /* Extensions */,
+				7010B10821D2DCE2006D7F87 /* CustomUI */,
+				7010B0ED21D28705006D7F87 /* Networking */,
+				7010B17421D39186006D7F87 /* ATBaseCoordinator.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		7074DAD721D27A0300A8D408 /* HTTPClient */ = {
+			isa = PBXGroup;
+			children = (
+				7010B0E921D2861A006D7F87 /* ATResult.swift */,
+				7010B0EB21D28668006D7F87 /* ATAPIError.swift */,
+				7010B10621D2CB22006D7F87 /* ATHTTPClient.swift */,
+			);
+			path = HTTPClient;
+			sourceTree = "<group>";
+		};
+		AF0A5DEC789D88D6A0B3BE32 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				445C8D1D91DCF37A3CA1C0E3 /* Pods_Atlas.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7074DAB721D26AE000A8D408 /* Atlas */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7074DACD21D26AE000A8D408 /* Build configuration list for PBXNativeTarget "Atlas" */;
+			buildPhases = (
+				FD74AACC49B5748381E5C4F0 /* [CP] Check Pods Manifest.lock */,
+				7074DAB421D26AE000A8D408 /* Sources */,
+				7074DAB521D26AE000A8D408 /* Frameworks */,
+				7074DAB621D26AE000A8D408 /* Resources */,
+				39752565ECDDA6B8F7467181 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Atlas;
+			productName = Atlas;
+			productReference = 7074DAB821D26AE000A8D408 /* Atlas.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7074DAB021D26AE000A8D408 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AT;
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Kostiantyn Madiar";
+				TargetAttributes = {
+					7074DAB721D26AE000A8D408 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 7074DAB321D26AE000A8D408 /* Build configuration list for PBXProject "Atlas" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7074DAAF21D26AE000A8D408;
+			productRefGroup = 7074DAB921D26AE000A8D408 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7074DAB721D26AE000A8D408 /* Atlas */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7074DAB621D26AE000A8D408 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7010B16A21D388E4006D7F87 /* Regions.storyboard in Resources */,
+				7074DAC921D26AE000A8D408 /* LaunchScreen.storyboard in Resources */,
+				7024ED1521D55CEE0000D7E3 /* Favorites.storyboard in Resources */,
+				7074DAC621D26AE000A8D408 /* Assets.xcassets in Resources */,
+				7024ECF121D3A8AE0000D7E3 /* Countries.storyboard in Resources */,
+				7024ECF921D41F9F0000D7E3 /* Country.storyboard in Resources */,
+				7074DAC121D26AE000A8D408 /* Main.storyboard in Resources */,
+				7024ED0721D4418B0000D7E3 /* Search.storyboard in Resources */,
+				7024ECF521D3BC560000D7E3 /* Flags.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		39752565ECDDA6B8F7467181 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Atlas/Pods-Atlas-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BRYXBanner/BRYXBanner.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BRYXBanner.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Atlas/Pods-Atlas-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD74AACC49B5748381E5C4F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Atlas-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7074DAB421D26AE000A8D408 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7010B11321D2E5A7006D7F87 /* ATDataService.swift in Sources */,
+				7010B0F721D28B7A006D7F87 /* ATCountry.swift in Sources */,
+				7010B15421D37DC3006D7F87 /* ATPresentable.swift in Sources */,
+				7010B11521D2E727006D7F87 /* ATNetworkDataManager.swift in Sources */,
+				7024ED0121D43EFE0000D7E3 /* SearchListView.swift in Sources */,
+				7024ED0521D440A30000D7E3 /* SearchListController.swift in Sources */,
+				7010B17121D38F14006D7F87 /* ATTabbarView.swift in Sources */,
+				7010B17D21D39CCF006D7F87 /* AtlasCoordinator.swift in Sources */,
+				7024ECE921D3A34B0000D7E3 /* CountryListItem.swift in Sources */,
+				7010B0F921D28D39006D7F87 /* ATCurrency.swift in Sources */,
+				7010B17A21D392E1006D7F87 /* ATRouterImp.swift in Sources */,
+				7024ED0B21D4AA570000D7E3 /* SearchViewModel.swift in Sources */,
+				7024ED1121D55B920000D7E3 /* FavoritesListItem.swift in Sources */,
+				7010B10121D2AB54006D7F87 /* TextConstants.swift in Sources */,
+				7010B0FB21D28DA4006D7F87 /* ATLanguage.swift in Sources */,
+				7010B0FF21D2AA55006D7F87 /* ATRegion.swift in Sources */,
+				7010B0EA21D2861A006D7F87 /* ATResult.swift in Sources */,
+				7024ECFB21D420250000D7E3 /* ContryDetailView.swift in Sources */,
+				7010B0F421D28859006D7F87 /* ATCountriesAPIWrapper.swift in Sources */,
+				7024ECE721D3A3170000D7E3 /* CountryListView.swift in Sources */,
+				7010B14D21D378B7006D7F87 /* ApplicationCoordinator.swift in Sources */,
+				7010B16321D3879A006D7F87 /* UIVIewControllerExtension.swift in Sources */,
+				7024ECED21D3A4F10000D7E3 /* ATFlagHelper.swift in Sources */,
+				7010B16F21D38DFF006D7F87 /* ATCoordinatorFactoryImp.swift in Sources */,
+				7010B15B21D3801D006D7F87 /* RegionsListItem.swift in Sources */,
+				7010B17321D3901F006D7F87 /* ATTabbarCoordinator.swift in Sources */,
+				7024ECF321D3AA1D0000D7E3 /* CountryListTableViewCell.swift in Sources */,
+				7010B16621D3880A006D7F87 /* Storyboards.swift in Sources */,
+				7010B17821D392B9006D7F87 /* ATRouter.swift in Sources */,
+				7010B15221D37D70006D7F87 /* ATModuleFactory.swift in Sources */,
+				7074DABE21D26AE000A8D408 /* ViewController.swift in Sources */,
+				7010B16821D38846006D7F87 /* NSObjectExtension.swift in Sources */,
+				7010B10F21D2DFE6006D7F87 /* UIViewExtension.swift in Sources */,
+				7010B0F021D2871D006D7F87 /* ATEndpoint.swift in Sources */,
+				7024ED1321D55C840000D7E3 /* FavoritesListController.swift in Sources */,
+				7074DADA21D27A3400A8D408 /* ATHTTPClientProtocol.swift in Sources */,
+				7010B16121D38287006D7F87 /* RegionsListController.swift in Sources */,
+				7010B16D21D38D4B006D7F87 /* ATCoordinatorFactory.swift in Sources */,
+				7024ED0D21D559C80000D7E3 /* FavoritesCoordinator.swift in Sources */,
+				7024ECEF21D3A7570000D7E3 /* CountryListParam.swift in Sources */,
+				7010B10721D2CB22006D7F87 /* ATHTTPClient.swift in Sources */,
+				7024ECFD21D422A20000D7E3 /* CountryDetailController.swift in Sources */,
+				7010B10321D2AC2C006D7F87 /* ATRegionGroup.swift in Sources */,
+				7024ECEB21D3A41F0000D7E3 /* CountryListController.swift in Sources */,
+				7010B11721D2ED88006D7F87 /* ArrayExtension.swift in Sources */,
+				7010B15921D37F5E006D7F87 /* RegionsListView.swift in Sources */,
+				7024ECF721D3BD4B0000D7E3 /* ATFlag.swift in Sources */,
+				7010B15F21D38165006D7F87 /* ATModuleFactoryImp.swift in Sources */,
+				7010B14A21D376DB006D7F87 /* MainTabBarViewController.swift in Sources */,
+				7010B10C21D2DF10006D7F87 /* ATActivityView.swift in Sources */,
+				7024ED0921D442FD0000D7E3 /* SearchCoordinator.swift in Sources */,
+				7010B0EC21D28668006D7F87 /* ATAPIError.swift in Sources */,
+				7010B15721D37E15006D7F87 /* ATBaseView.swift in Sources */,
+				7010B17521D39186006D7F87 /* ATBaseCoordinator.swift in Sources */,
+				7010B14F21D378D2006D7F87 /* ATCoordinator.swift in Sources */,
+				7074DABC21D26AE000A8D408 /* AppDelegate.swift in Sources */,
+				7010B10A21D2DD13006D7F87 /* ATAlert.swift in Sources */,
+				7024ECFF21D4280E0000D7E3 /* CountryDetails.swift in Sources */,
+				7024ED0F21D55B630000D7E3 /* FavoritesView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7074DABF21D26AE000A8D408 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7074DAC021D26AE000A8D408 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7074DAC721D26AE000A8D408 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7074DAC821D26AE000A8D408 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7074DACB21D26AE000A8D408 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7074DACC21D26AE000A8D408 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7074DACE21D26AE000A8D408 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35A230AF56667650012BF7D5 /* Pods-Atlas.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/Atlas/Application/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.atlas;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		7074DACF21D26AE000A8D408 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55EA86C8042ABD4362830B1C /* Pods-Atlas.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/Atlas/Application/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.atlas;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7074DAB321D26AE000A8D408 /* Build configuration list for PBXProject "Atlas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7074DACB21D26AE000A8D408 /* Debug */,
+				7074DACC21D26AE000A8D408 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7074DACD21D26AE000A8D408 /* Build configuration list for PBXNativeTarget "Atlas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7074DACE21D26AE000A8D408 /* Debug */,
+				7074DACF21D26AE000A8D408 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7074DAB021D26AE000A8D408 /* Project object */;
+}
