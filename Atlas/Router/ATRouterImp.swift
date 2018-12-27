@@ -38,23 +38,6 @@ final class ATRouterImp: NSObject, ATRouter {
         return rootController
     }
     
-    func present(_ module: ATPresentable?) {
-        present(module, animated: true)
-    }
-    
-    func present(_ module: ATPresentable?, animated: Bool) {
-        guard let controller = module?.toPresent() else { return }
-        rootController?.present(controller, animated: animated, completion: nil)
-    }
-    
-    func dismissModule() {
-        dismissModule(animated: true, completion: nil)
-    }
-    
-    func dismissModule(animated: Bool, completion: (() -> Void)?) {
-        rootController?.dismiss(animated: animated, completion: completion)
-    }
-    
     func push(_ module: ATPresentable?)  {
         push(module, animated: true)
     }

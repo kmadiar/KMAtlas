@@ -65,6 +65,11 @@
 		7024ED0721D4418B0000D7E3 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7024ED0621D4418B0000D7E3 /* Search.storyboard */; };
 		7024ED0921D442FD0000D7E3 /* SearchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7024ED0821D442FD0000D7E3 /* SearchCoordinator.swift */; };
 		7024ED0B21D4AA570000D7E3 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7024ED0A21D4AA570000D7E3 /* SearchViewModel.swift */; };
+		7024ED0D21D559C80000D7E3 /* FavoritesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7024ED0C21D559C80000D7E3 /* FavoritesCoordinator.swift */; };
+		7024ED0F21D55B630000D7E3 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7024ED0E21D55B630000D7E3 /* FavoritesView.swift */; };
+		7024ED1121D55B920000D7E3 /* FavoritesListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7024ED1021D55B920000D7E3 /* FavoritesListItem.swift */; };
+		7024ED1321D55C840000D7E3 /* FavoritesListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7024ED1221D55C840000D7E3 /* FavoritesListController.swift */; };
+		7024ED1521D55CEE0000D7E3 /* Favorites.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7024ED1421D55CEE0000D7E3 /* Favorites.storyboard */; };
 		7074DABC21D26AE000A8D408 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7074DABB21D26AE000A8D408 /* AppDelegate.swift */; };
 		7074DABE21D26AE000A8D408 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7074DABD21D26AE000A8D408 /* ViewController.swift */; };
 		7074DAC121D26AE000A8D408 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7074DABF21D26AE000A8D408 /* Main.storyboard */; };
@@ -134,6 +139,11 @@
 		7024ED0621D4418B0000D7E3 /* Search.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		7024ED0821D442FD0000D7E3 /* SearchCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCoordinator.swift; sourceTree = "<group>"; };
 		7024ED0A21D4AA570000D7E3 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		7024ED0C21D559C80000D7E3 /* FavoritesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesCoordinator.swift; sourceTree = "<group>"; };
+		7024ED0E21D55B630000D7E3 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		7024ED1021D55B920000D7E3 /* FavoritesListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListItem.swift; sourceTree = "<group>"; };
+		7024ED1221D55C840000D7E3 /* FavoritesListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListController.swift; sourceTree = "<group>"; };
+		7024ED1421D55CEE0000D7E3 /* Favorites.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Favorites.storyboard; sourceTree = "<group>"; };
 		7074DAB821D26AE000A8D408 /* Atlas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Atlas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7074DABB21D26AE000A8D408 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7074DABD21D26AE000A8D408 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -240,6 +250,7 @@
 		7010B11921D357D7006D7F87 /* Favorites */ = {
 			isa = PBXGroup;
 			children = (
+				7024ED0C21D559C80000D7E3 /* FavoritesCoordinator.swift */,
 			);
 			path = Favorites;
 			sourceTree = "<group>";
@@ -269,6 +280,9 @@
 		7010B13021D37524006D7F87 /* Favorite */ = {
 			isa = PBXGroup;
 			children = (
+				7024ED0E21D55B630000D7E3 /* FavoritesView.swift */,
+				7024ED1021D55B920000D7E3 /* FavoritesListItem.swift */,
+				7024ED1221D55C840000D7E3 /* FavoritesListController.swift */,
 			);
 			path = Favorite;
 			sourceTree = "<group>";
@@ -332,6 +346,7 @@
 				7010B16921D388E4006D7F87 /* Regions.storyboard */,
 				7010B16521D3880A006D7F87 /* Storyboards.swift */,
 				7024ECF821D41F9F0000D7E3 /* Country.storyboard */,
+				7024ED1421D55CEE0000D7E3 /* Favorites.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -549,6 +564,7 @@
 			files = (
 				7010B16A21D388E4006D7F87 /* Regions.storyboard in Resources */,
 				7074DAC921D26AE000A8D408 /* LaunchScreen.storyboard in Resources */,
+				7024ED1521D55CEE0000D7E3 /* Favorites.storyboard in Resources */,
 				7074DAC621D26AE000A8D408 /* Assets.xcassets in Resources */,
 				7024ECF121D3A8AE0000D7E3 /* Countries.storyboard in Resources */,
 				7024ECF921D41F9F0000D7E3 /* Country.storyboard in Resources */,
@@ -632,6 +648,7 @@
 				7010B0F921D28D39006D7F87 /* ATCurrency.swift in Sources */,
 				7010B17A21D392E1006D7F87 /* ATRouterImp.swift in Sources */,
 				7024ED0B21D4AA570000D7E3 /* SearchViewModel.swift in Sources */,
+				7024ED1121D55B920000D7E3 /* FavoritesListItem.swift in Sources */,
 				7010B10121D2AB54006D7F87 /* TextConstants.swift in Sources */,
 				7010B0FB21D28DA4006D7F87 /* ATLanguage.swift in Sources */,
 				7010B0FF21D2AA55006D7F87 /* ATRegion.swift in Sources */,
@@ -653,9 +670,11 @@
 				7010B16821D38846006D7F87 /* NSObjectExtension.swift in Sources */,
 				7010B10F21D2DFE6006D7F87 /* UIViewExtension.swift in Sources */,
 				7010B0F021D2871D006D7F87 /* ATEndpoint.swift in Sources */,
+				7024ED1321D55C840000D7E3 /* FavoritesListController.swift in Sources */,
 				7074DADA21D27A3400A8D408 /* ATHTTPClientProtocol.swift in Sources */,
 				7010B16121D38287006D7F87 /* RegionsListController.swift in Sources */,
 				7010B16D21D38D4B006D7F87 /* ATCoordinatorFactory.swift in Sources */,
+				7024ED0D21D559C80000D7E3 /* FavoritesCoordinator.swift in Sources */,
 				7024ECEF21D3A7570000D7E3 /* CountryListParam.swift in Sources */,
 				7010B10721D2CB22006D7F87 /* ATHTTPClient.swift in Sources */,
 				7024ECFD21D422A20000D7E3 /* CountryDetailController.swift in Sources */,
@@ -675,6 +694,7 @@
 				7074DABC21D26AE000A8D408 /* AppDelegate.swift in Sources */,
 				7010B10A21D2DD13006D7F87 /* ATAlert.swift in Sources */,
 				7024ECFF21D4280E0000D7E3 /* CountryDetails.swift in Sources */,
+				7024ED0F21D55B630000D7E3 /* FavoritesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

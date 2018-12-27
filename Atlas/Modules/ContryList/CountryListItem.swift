@@ -11,6 +11,3 @@ struct CountryListItem {
     let name: String
     let nativeName: String
 }
-
-//
-//CountryListItem(countryFlag: , name: , nativeName: )

@@ -11,4 +11,5 @@ protocol ATModuleFactory {
     func makeCoutryList(dataService: ATDataService, param: CountryListParam) -> CountryListView
     func makeCountryDetails(details: CountryDetails) -> CountryDetailView
     func makeSearchOutput(dataService: ATDataService) -> SearchListView
+    func makeFavoritesOutput(dataService: ATDataService) -> FavoritesView
 }

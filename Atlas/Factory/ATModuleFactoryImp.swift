@@ -7,6 +7,12 @@
 //
 
 final class ATModuleFactoryImp: ATModuleFactory {
+    func makeFavoritesOutput(dataService: ATDataService) -> FavoritesView {
+        let vc = FavoritesListController.atlas_controllerFromStoryboard(.favorites)
+        vc.dataService = dataService
+        return vc
+    }
+    
     func makeSearchOutput(dataService: ATDataService) -> SearchListView {
         let vc = SearchListController.atlas_controllerFromStoryboard(.search)
         return vc
