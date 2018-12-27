@@ -48,6 +48,7 @@ final class AtlasCoordinator: ATBaseCoordinator {
     }
     
     // TODO extract separate coordinator
+    // begin
     func showCountryDetails(_ details: CountryDetails) {
         if stack.count == 1 {
             let countryDetailsOutput = factory.makeCountryDetails(details: details)
@@ -119,4 +120,7 @@ final class AtlasCoordinator: ATBaseCoordinator {
             strongSelf.showCountryDetails(details)
         }
     }
+    
+    // end
+    // TODO
 }
