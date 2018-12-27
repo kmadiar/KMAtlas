@@ -64,6 +64,7 @@
 		7024ED0521D440A30000D7E3 /* SearchListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7024ED0421D440A30000D7E3 /* SearchListController.swift */; };
 		7024ED0721D4418B0000D7E3 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7024ED0621D4418B0000D7E3 /* Search.storyboard */; };
 		7024ED0921D442FD0000D7E3 /* SearchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7024ED0821D442FD0000D7E3 /* SearchCoordinator.swift */; };
+		7024ED0B21D4AA570000D7E3 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7024ED0A21D4AA570000D7E3 /* SearchViewModel.swift */; };
 		7074DABC21D26AE000A8D408 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7074DABB21D26AE000A8D408 /* AppDelegate.swift */; };
 		7074DABE21D26AE000A8D408 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7074DABD21D26AE000A8D408 /* ViewController.swift */; };
 		7074DAC121D26AE000A8D408 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7074DABF21D26AE000A8D408 /* Main.storyboard */; };
@@ -129,10 +130,10 @@
 		7024ECFC21D422A20000D7E3 /* CountryDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailController.swift; sourceTree = "<group>"; };
 		7024ECFE21D4280E0000D7E3 /* CountryDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetails.swift; sourceTree = "<group>"; };
 		7024ED0021D43EFE0000D7E3 /* SearchListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchListView.swift; sourceTree = "<group>"; };
-		7024ED0221D43F700000D7E3 /* SearchListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchListItem.swift; sourceTree = "<group>"; };
 		7024ED0421D440A30000D7E3 /* SearchListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchListController.swift; sourceTree = "<group>"; };
 		7024ED0621D4418B0000D7E3 /* Search.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		7024ED0821D442FD0000D7E3 /* SearchCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCoordinator.swift; sourceTree = "<group>"; };
+		7024ED0A21D4AA570000D7E3 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		7074DAB821D26AE000A8D408 /* Atlas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Atlas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7074DABB21D26AE000A8D408 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7074DABD21D26AE000A8D408 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -296,8 +297,8 @@
 			isa = PBXGroup;
 			children = (
 				7024ED0021D43EFE0000D7E3 /* SearchListView.swift */,
-				7024ED0221D43F700000D7E3 /* SearchListItem.swift */,
 				7024ED0421D440A30000D7E3 /* SearchListController.swift */,
+				7024ED0A21D4AA570000D7E3 /* SearchViewModel.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -569,19 +570,21 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Atlas/Pods-Atlas-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/BRYXBanner/BRYXBanner.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BRYXBanner.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -628,6 +631,7 @@
 				7024ECE921D3A34B0000D7E3 /* CountryListItem.swift in Sources */,
 				7010B0F921D28D39006D7F87 /* ATCurrency.swift in Sources */,
 				7010B17A21D392E1006D7F87 /* ATRouterImp.swift in Sources */,
+				7024ED0B21D4AA570000D7E3 /* SearchViewModel.swift in Sources */,
 				7010B10121D2AB54006D7F87 /* TextConstants.swift in Sources */,
 				7010B0FB21D28DA4006D7F87 /* ATLanguage.swift in Sources */,
 				7010B0FF21D2AA55006D7F87 /* ATRegion.swift in Sources */,

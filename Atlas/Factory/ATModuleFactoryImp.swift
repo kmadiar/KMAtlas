@@ -9,8 +9,6 @@
 final class ATModuleFactoryImp: ATModuleFactory {
     func makeSearchOutput(dataService: ATDataService) -> SearchListView {
         let vc = SearchListController.atlas_controllerFromStoryboard(.search)
-        vc.dataService = dataService
-        
         return vc
     }
     

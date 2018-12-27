@@ -7,93 +7,55 @@
 //
 
 import UIKit
+import RxSwift
 
 final class SearchListController: ATRootViewController, SearchListView {
     //controller handler
     var onItemSelect: ((CountryListItem) -> ())?
     
-    var dataService: ATDataService? {
-        didSet {
-            refreshData()
-        }
-    }
-    var params: CountryListParam? {
-        didSet {
-            refreshData()
-            title = params?.name
-        }
-    }
-    
-    var items = [CountryListItem]() {
-        didSet {
-            DispatchQueue.main.async { [weak self] in
-                self?.tableView?.reloadData()
-            }
-        }
-    }
-    
     @IBOutlet weak var tableView: UITableView!
+    
+    let searchController = UISearchController(searchResultsController: nil)
+    var searchBar: UISearchBar { return searchController.searchBar }
+    
+    var viewModel = SearchViewModel()
+    let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         navigationController?.setToolbarHidden(true, animated: false)
-    }
-}
-
-extension SearchListController: UITableViewDelegate, UITableViewDataSource {
-    
-    func refreshData() {
-        guard let source = dataService, let p = params else {
-            return
-        }
         
-        let finish: (ATResult<[ATCountry], ATAPIError>) -> () = { [weak self] result in
-            guard let strongSelf = self else { return }
-            switch result {
-            case .success(let countries):
-                strongSelf.items = countries.map({ CountryListItem(countryFlag: $0.flag, name: $0.name, nativeName: $0.nativeName) })
-            case .failure(let error):
-                strongSelf.alert.show(errorMessage: error.customDescription)
-            }
-        }
+        configureSearchController()
         
-        var countries: [ATCountry] = []
+        viewModel.data
+            .drive(tableView.rx.items(cellIdentifier: "Cell")) { _, listItem, cell in
+                guard let cell = cell as? CountryListTableViewCell else { return }
+                cell.leftLabel.text = listItem.countryFlag
+                cell.topLabel.text = listItem.name
+            }.disposed(by: disposeBag)
         
-        if let rid = p.regionId {
-            guard let region = ATRegion(rawValue: rid) else { return }
-            countries = source.getCountries(by: region, completion: { result in
-                finish(result)
-            })
-        } else if let rgid = p.regionGroupId {
-            guard let regionGroup = ATRegionGroup(rawValue: rgid) else { return }
-            countries = source.getCountries(by: regionGroup, completion: { result in
-                finish(result)
-            })
-        }
+        searchBar.rx.text.orEmpty
+            .bind(to: viewModel.searchText)
+            .disposed(by: disposeBag)
         
-        items = countries.map({ CountryListItem(countryFlag: $0.flag, name: $0.name, nativeName: $0.nativeName) })
+        viewModel.data.asDriver()
+            .map { "\($0.count) matches found" }
+            .drive(navigationItem.rx.title)
+            .disposed(by: disposeBag)
+        
+        tableView.rx.modelSelected(CountryListItem.self)
+            .subscribe(onNext: { [weak self] item in
+                self?.onItemSelect?(item)
+            }).disposed(by: disposeBag)
     }
     
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return items.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! CountryListTableViewCell
-        let item = items[(indexPath as NSIndexPath).row]
-        cell.topLabel.text = item.name
-        cell.bottomLabel.text = item.nativeName
-        cell.leftLabel.text = item.countryFlag
-        return cell
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        onItemSelect?(items[(indexPath as NSIndexPath).row])
-        tableView.deselectRow(at: indexPath, animated: true)
+    func configureSearchController() {
+        searchController.obscuresBackgroundDuringPresentation = false
+        searchBar.showsCancelButton = true
+        searchBar.text = ""
+        searchBar.placeholder = "Enter Country Name"
+        tableView.tableHeaderView = searchController.searchBar
+        definesPresentationContext = true
     }
 }

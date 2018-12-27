@@ -8,5 +8,7 @@ target 'Atlas' do
   # Pods for Atlas
   pod 'MBProgressHUD' # Activity indicator which overlaps some view to temporary disable user interaction on it. Useful during processing network requests.
   pod 'BRYXBanner' # A lightweight dropdown notification in Swift
+  pod 'RxSwift'
+  pod 'RxCocoa'
 
 end
