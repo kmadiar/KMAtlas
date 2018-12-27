@@ -27,4 +27,7 @@ protocol ATRouter: ATPresentable {
     func setRootModule(_ module: ATPresentable?, hideBar: Bool)
     
     func popToRootModule(animated: Bool)
+    
+    func removeFromStack(_ module: ATPresentable?)
+    func insert(module: ATPresentable?, before: ATPresentable?)
 }

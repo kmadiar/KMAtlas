@@ -31,7 +31,7 @@ class SearchViewModel {
         
         return URLSession.shared.rx.data(request: URLRequest(url: url))
             .retry(3)
-            //.catchErrorJustReturn([])
+            .catchErrorJustReturn(Data())
             .map(parse)
     }
     

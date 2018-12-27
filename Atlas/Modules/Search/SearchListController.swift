@@ -48,6 +48,10 @@ final class SearchListController: ATRootViewController, SearchListView {
             .subscribe(onNext: { [weak self] item in
                 self?.onItemSelect?(item)
             }).disposed(by: disposeBag)
+        tableView.rx.itemSelected
+            .subscribe(onNext: { [weak self] index in
+                self?.tableView?.deselectRow(at: index, animated: false)
+            }).disposed(by: disposeBag)
     }
     
     func configureSearchController() {

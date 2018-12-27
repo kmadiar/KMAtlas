@@ -9,5 +9,7 @@
 import Foundation
 
 protocol CountryDetailView: ATBaseView {
+    var details: CountryDetails? { get set }
     var onItemSelect: ((CountryListItem) -> ())? { get set }
+    var onBack: (() -> ())? { get set }
 }

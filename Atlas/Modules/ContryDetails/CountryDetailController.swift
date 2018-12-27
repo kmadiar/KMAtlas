@@ -10,20 +10,23 @@ import UIKit
 import MapKit
 
 final class CountryDetailController: ATRootViewController, CountryDetailView {
-    //controller handler
-    var onItemSelect: ((CountryListItem) -> ())?
-    
-//    var dataService: ATDataService? {
-//        didSet {
-//            refreshData()
-//        }
-//    }
     var details: CountryDetails? {
         didSet {
             title = details?.name
             refreshData()
         }
     }
+    
+    //controller handler
+    var onItemSelect: ((CountryListItem) -> ())?
+    var onBack: (() -> ())?
+
+//    var details: CountryDetails? {
+//        didSet {
+//            title = details?.name
+//            refreshData()
+//        }
+//    }
     
     var items = [CountryListItem]() {
         didSet {
@@ -50,7 +53,23 @@ final class CountryDetailController: ATRootViewController, CountryDetailView {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         navigationController?.setNavigationBarHidden(true, animated: false)
+        if self.isMovingFromParent {
+            onBack?()
+        }
     }
+    
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//        self.navigationItem.hidesBackButton = true
+//        let newBackButton = UIBarButtonItem(title: "Back", style: UIBarButtonItem.Style.plain, target: self, action: #selector(CountryDetailController.back(sender:)))
+//        self.navigationItem.leftBarButtonItem = newBackButton
+//    }
+//    
+//    @objc func back(sender: UIBarButtonItem) {
+//        // Perform your custom actions
+//        // ...
+//        onBack?()
+//    }
 }
 
 extension CountryDetailController: UITableViewDelegate, UITableViewDataSource {
@@ -86,10 +105,13 @@ extension CountryDetailController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! CountryListTableViewCell
-        let item = items[(indexPath as NSIndexPath).row]
-        cell.topLabel.text = item.name
-        cell.bottomLabel.text = item.nativeName
-        cell.leftLabel.text = item.countryFlag
+        let row = (indexPath as NSIndexPath).row
+        if row < items.count {
+            let item = items[row]
+            cell.topLabel.text = item.name
+            cell.bottomLabel.text = item.nativeName
+            cell.leftLabel.text = item.countryFlag
+        }
         return cell
     }
     

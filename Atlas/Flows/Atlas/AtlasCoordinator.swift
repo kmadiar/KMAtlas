@@ -48,14 +48,65 @@ final class AtlasCoordinator: ATBaseCoordinator {
     }
     
     func showCountryDetails(_ details: CountryDetails) {
-        let countryDetailsOutput = factory.makeCountryDetails(details: details)
-        countryDetailsOutput.onItemSelect = showDetails
-        router.push(countryDetailsOutput)
+        if stack.count == 1 {
+            let countryDetailsOutput = factory.makeCountryDetails(details: details)
+            countryDetailsOutput.onItemSelect = showDetails
+            countryDetailsOutput.onBack = { [weak self] in
+//                self?.router.popModule()
+            }
+            router.push(countryDetailsOutput)
+        } else {
+            pushModule(details: details)
+        }
+    }
+    
+    private var stack: [CountryDetails] = []
+    private var left: CountryDetailView?
+    private var current: CountryDetailView?
+    private var right: CountryDetailView?
+    
+    
+    private func pushModule(details: CountryDetails) {
+        //prepare next module
+        if right == nil {
+            right = factory.makeCountryDetails(details: details)
+            right!.onItemSelect = showDetails
+            right!.onBack = { [weak self] in
+                self?.popModule()
+            }
+        } else {
+            right?.details = details
+        }
+        // switch modules
+        router.push(right)
+        
+        let tmp = left
+        left = current
+        current = right
+        right = tmp
+        
+        if stack.count > 2 {
+            router.removeFromStack(right)
+        }
+    }
+    
+    private func popModule() {
+        _ = stack.removeLast()
+//        router.popModule()
+        
+        let tmp = current
+        current = left
+        left = right
+        right = tmp
+        left?.details = stack[stack.count-1]
+        if stack.count > 2 {
+            router.insert(module: right, before: current)
+        }
     }
     
     lazy var showDetails: ((CountryListItem) -> ()) = { [weak self] item in
         guard let strongSelf = self else { return }
-        
+
         if let c = strongSelf.dataService.getCountry(by: item.name) {
             let joiner = ", "
             let currencies = c.currencies.compactMap({ $0.name }).joined(separator: joiner)
@@ -68,7 +119,7 @@ final class AtlasCoordinator: ATBaseCoordinator {
             }
             
             let details = CountryDetails(name: c.name, flag: c.flag, currency: currencies, languages: languages, location: c.latlng, items: items)
-            
+            strongSelf.stack.append(details)
             strongSelf.showCountryDetails(details)
         }
     }

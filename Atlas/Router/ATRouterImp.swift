@@ -9,6 +9,22 @@
 import UIKit
 
 final class ATRouterImp: NSObject, ATRouter {
+    func insert(module: ATPresentable?, before: ATPresentable?) {
+        guard let controller = module?.toPresent()/*, let beforeController = before?.toPresent()*/ else { return }
+        
+        if let count = rootController?.viewControllers.count {
+            let i = (count - 1) >= 0 ? count - 1 : 0
+            rootController?.viewControllers.insert(controller, at: i)
+        }
+    }
+    
+    func removeFromStack(_ module: ATPresentable?) {
+        guard let controller = module?.toPresent() else { return }
+        if let index = rootController?.viewControllers.firstIndex(of: controller) {
+            rootController?.viewControllers.remove(at: index)
+        }
+    }
+    
     
     private weak var rootController: UINavigationController?
     private var completions: [UIViewController : () -> Void]
