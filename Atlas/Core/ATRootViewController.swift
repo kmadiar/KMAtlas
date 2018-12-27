@@ -8,10 +8,4 @@
 
 import UIKit
 
-class ATRootViewController: UIViewController {
-
-    var activity: ATActivity!
-    var alert: ATAlert!
-
-}
-
+typealias ATRootViewController = UIViewController

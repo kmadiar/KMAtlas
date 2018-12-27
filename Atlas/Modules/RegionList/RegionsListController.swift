@@ -54,7 +54,8 @@ extension RegionsListController: UITableViewDelegate, UITableViewDataSource {
             case .success(let regions):
                 strongSelf.items = regions.map({ RegionsListItem(name: $0.title(), code: $0.rawValue, group: false) })
             case .failure(let error):
-                strongSelf.alert.show(errorMessage: error.customDescription)
+                print(error)
+//                strongSelf.alert.show(errorMessage: error.customDescription)
             }
         }).map({ RegionsListItem(name: $0.title(), code: $0.rawValue, group: false) })
         
@@ -64,7 +65,8 @@ extension RegionsListController: UITableViewDelegate, UITableViewDataSource {
             case .success(let regionsGroup):
                 strongSelf.itemsGroup = regionsGroup.map({ RegionsListItem(name: $0.title(), code: $0.rawValue, group: true) })
             case .failure(let error):
-                strongSelf.alert.show(errorMessage: error.customDescription)
+                print(error)
+//                strongSelf.alert.show(errorMessage: error.customDescription)
             }
         }).map({ RegionsListItem(name: $0.title(), code: $0.rawValue, group: false) })
     }

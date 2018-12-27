@@ -19,9 +19,6 @@
 		7010B10121D2AB54006D7F87 /* TextConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B10021D2AB54006D7F87 /* TextConstants.swift */; };
 		7010B10321D2AC2C006D7F87 /* ATRegionGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B10221D2AC2C006D7F87 /* ATRegionGroup.swift */; };
 		7010B10721D2CB22006D7F87 /* ATHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B10621D2CB22006D7F87 /* ATHTTPClient.swift */; };
-		7010B10A21D2DD13006D7F87 /* ATAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B10921D2DD13006D7F87 /* ATAlert.swift */; };
-		7010B10C21D2DF10006D7F87 /* ATActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B10B21D2DF10006D7F87 /* ATActivityView.swift */; };
-		7010B10F21D2DFE6006D7F87 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B10E21D2DFE6006D7F87 /* UIViewExtension.swift */; };
 		7010B11321D2E5A7006D7F87 /* ATDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B11221D2E5A7006D7F87 /* ATDataService.swift */; };
 		7010B11521D2E727006D7F87 /* ATNetworkDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B11421D2E727006D7F87 /* ATNetworkDataManager.swift */; };
 		7010B11721D2ED88006D7F87 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010B11621D2ED88006D7F87 /* ArrayExtension.swift */; };
@@ -71,7 +68,7 @@
 		7024ED1321D55C840000D7E3 /* FavoritesListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7024ED1221D55C840000D7E3 /* FavoritesListController.swift */; };
 		7024ED1521D55CEE0000D7E3 /* Favorites.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7024ED1421D55CEE0000D7E3 /* Favorites.storyboard */; };
 		7074DABC21D26AE000A8D408 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7074DABB21D26AE000A8D408 /* AppDelegate.swift */; };
-		7074DABE21D26AE000A8D408 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7074DABD21D26AE000A8D408 /* ViewController.swift */; };
+		7074DABE21D26AE000A8D408 /* ATRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7074DABD21D26AE000A8D408 /* ATRootViewController.swift */; };
 		7074DAC121D26AE000A8D408 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7074DABF21D26AE000A8D408 /* Main.storyboard */; };
 		7074DAC621D26AE000A8D408 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7074DAC521D26AE000A8D408 /* Assets.xcassets */; };
 		7074DAC921D26AE000A8D408 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7074DAC721D26AE000A8D408 /* LaunchScreen.storyboard */; };
@@ -93,9 +90,6 @@
 		7010B10021D2AB54006D7F87 /* TextConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextConstants.swift; sourceTree = "<group>"; };
 		7010B10221D2AC2C006D7F87 /* ATRegionGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATRegionGroup.swift; sourceTree = "<group>"; };
 		7010B10621D2CB22006D7F87 /* ATHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATHTTPClient.swift; sourceTree = "<group>"; };
-		7010B10921D2DD13006D7F87 /* ATAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATAlert.swift; sourceTree = "<group>"; };
-		7010B10B21D2DF10006D7F87 /* ATActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATActivityView.swift; sourceTree = "<group>"; };
-		7010B10E21D2DFE6006D7F87 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		7010B11221D2E5A7006D7F87 /* ATDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATDataService.swift; sourceTree = "<group>"; };
 		7010B11421D2E727006D7F87 /* ATNetworkDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATNetworkDataManager.swift; sourceTree = "<group>"; };
 		7010B11621D2ED88006D7F87 /* ArrayExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
@@ -146,7 +140,7 @@
 		7024ED1421D55CEE0000D7E3 /* Favorites.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Favorites.storyboard; sourceTree = "<group>"; };
 		7074DAB821D26AE000A8D408 /* Atlas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Atlas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7074DABB21D26AE000A8D408 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7074DABD21D26AE000A8D408 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7074DABD21D26AE000A8D408 /* ATRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATRootViewController.swift; sourceTree = "<group>"; };
 		7074DAC021D26AE000A8D408 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7074DAC521D26AE000A8D408 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7074DAC821D26AE000A8D408 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -202,19 +196,9 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
-		7010B10821D2DCE2006D7F87 /* CustomUI */ = {
-			isa = PBXGroup;
-			children = (
-				7010B10921D2DD13006D7F87 /* ATAlert.swift */,
-				7010B10B21D2DF10006D7F87 /* ATActivityView.swift */,
-			);
-			path = CustomUI;
-			sourceTree = "<group>";
-		};
 		7010B10D21D2DFCC006D7F87 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				7010B10E21D2DFE6006D7F87 /* UIViewExtension.swift */,
 				7010B11621D2ED88006D7F87 /* ArrayExtension.swift */,
 				7010B16221D3879A006D7F87 /* UIVIewControllerExtension.swift */,
 				7010B16721D38846006D7F87 /* NSObjectExtension.swift */,
@@ -449,7 +433,6 @@
 		7074DAD321D2743700A8D408 /* MainTabBar */ = {
 			isa = PBXGroup;
 			children = (
-				7074DABD21D26AE000A8D408 /* ViewController.swift */,
 				7010B14921D376DB006D7F87 /* MainTabBarViewController.swift */,
 				7010B17021D38F14006D7F87 /* ATTabbarView.swift */,
 				7010B17221D3901F006D7F87 /* ATTabbarCoordinator.swift */,
@@ -476,9 +459,9 @@
 				7010B11021D2E576006D7F87 /* Services */,
 				7010B0F221D2883F006D7F87 /* Utils */,
 				7010B10D21D2DFCC006D7F87 /* Extensions */,
-				7010B10821D2DCE2006D7F87 /* CustomUI */,
 				7010B0ED21D28705006D7F87 /* Networking */,
 				7010B17421D39186006D7F87 /* ATBaseCoordinator.swift */,
+				7074DABD21D26AE000A8D408 /* ATRootViewController.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -666,9 +649,8 @@
 				7010B16621D3880A006D7F87 /* Storyboards.swift in Sources */,
 				7010B17821D392B9006D7F87 /* ATRouter.swift in Sources */,
 				7010B15221D37D70006D7F87 /* ATModuleFactory.swift in Sources */,
-				7074DABE21D26AE000A8D408 /* ViewController.swift in Sources */,
+				7074DABE21D26AE000A8D408 /* ATRootViewController.swift in Sources */,
 				7010B16821D38846006D7F87 /* NSObjectExtension.swift in Sources */,
-				7010B10F21D2DFE6006D7F87 /* UIViewExtension.swift in Sources */,
 				7010B0F021D2871D006D7F87 /* ATEndpoint.swift in Sources */,
 				7024ED1321D55C840000D7E3 /* FavoritesListController.swift in Sources */,
 				7074DADA21D27A3400A8D408 /* ATHTTPClientProtocol.swift in Sources */,
@@ -685,14 +667,12 @@
 				7024ECF721D3BD4B0000D7E3 /* ATFlag.swift in Sources */,
 				7010B15F21D38165006D7F87 /* ATModuleFactoryImp.swift in Sources */,
 				7010B14A21D376DB006D7F87 /* MainTabBarViewController.swift in Sources */,
-				7010B10C21D2DF10006D7F87 /* ATActivityView.swift in Sources */,
 				7024ED0921D442FD0000D7E3 /* SearchCoordinator.swift in Sources */,
 				7010B0EC21D28668006D7F87 /* ATAPIError.swift in Sources */,
 				7010B15721D37E15006D7F87 /* ATBaseView.swift in Sources */,
 				7010B17521D39186006D7F87 /* ATBaseCoordinator.swift in Sources */,
 				7010B14F21D378D2006D7F87 /* ATCoordinator.swift in Sources */,
 				7074DABC21D26AE000A8D408 /* AppDelegate.swift in Sources */,
-				7010B10A21D2DD13006D7F87 /* ATAlert.swift in Sources */,
 				7024ECFF21D4280E0000D7E3 /* CountryDetails.swift in Sources */,
 				7024ED0F21D55B630000D7E3 /* FavoritesView.swift in Sources */,
 			);
