@@ -26,7 +26,6 @@ final class MainTabBarController: UITabBarController, UITabBarControllerDelegate
     
     func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
         guard let controller = viewControllers?[selectedIndex] as? UINavigationController else { return }
-        
         if selectedIndex == 0 {
             onAtlasFlowSelect?(controller)
         }

@@ -23,24 +23,26 @@ class ATTabbarCoordinator: ATBaseCoordinator {
         tabbarView.onSearchFlowSelect = runSearchFlow()
         tabbarView.onFavoritesFlowSelect = runFavoritesFlow()
     }
-    
+    var atlasCoordinator: AtlasCoordinator!
     private func runAtlasFlow() -> ((UINavigationController) -> ()) {
         return { [unowned self] navController in
             if navController.viewControllers.isEmpty == true {
-                let atlasCoordinator = self.coordinatorFactory.makeAtlasCoordinator(navController: navController)
-                self.addDependency(atlasCoordinator)
-                atlasCoordinator.start()
+                self.atlasCoordinator = self.coordinatorFactory.makeAtlasCoordinator(navController: navController) as! AtlasCoordinator
+                self.addDependency(self.atlasCoordinator)
+                self.atlasCoordinator.start()
             }
+            self.atlasCoordinator.clean()
         }
     }
-    
+    var searchCoordinator: SearchCoordinator!
     private func runSearchFlow() -> ((UINavigationController) -> ()) {
         return { [unowned self] navController in
             if navController.viewControllers.isEmpty == true {
-                let searchCoordinator = self.coordinatorFactory.makeSearchCoordinator(navController: navController)
-                self.addDependency(searchCoordinator)
-                searchCoordinator.start()
+                self.searchCoordinator = self.coordinatorFactory.makeSearchCoordinator(navController: navController) as! SearchCoordinator
+                self.addDependency(self.searchCoordinator)
+                self.searchCoordinator.start()
             }
+            self.searchCoordinator.clean()
         }
     }
     

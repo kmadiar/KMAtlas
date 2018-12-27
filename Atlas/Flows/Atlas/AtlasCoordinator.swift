@@ -49,6 +49,13 @@ final class AtlasCoordinator: ATBaseCoordinator {
     
     // TODO extract separate coordinator
     // begin
+    func clean() {
+        stack.removeAll()
+        left = nil
+        current = nil
+        right = nil
+    }
+    
     func showCountryDetails(_ details: CountryDetails) {
         if stack.count == 1 {
             let countryDetailsOutput = factory.makeCountryDetails(details: details)
@@ -89,6 +96,7 @@ final class AtlasCoordinator: ATBaseCoordinator {
     }
     
     private func popModule() {
+        guard !stack.isEmpty else { return }
         _ = stack.removeLast()
         
         let tmp = current
